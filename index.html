@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nedd Digital — QuickBooks & Power BI</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+  <!-- Inter font (matches modern clean UI) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <div class="brand">
+        <img src="/images/nedddigitallogo.png" alt="Nedd Digital logo" class="logo">
+        <div class="brand-text">
+          <div class="brand-title">Nedd Digital</div>
+          <div class="brand-sub">QuickBooks • Power BI</div>
+        </div>
+      </div>
+
+      <nav class="top-nav" aria-label="Main navigation">
+        <a href="#services">Services</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <div class="hero-left">
+        <h1>Turn QuickBooks data into clear, actionable Power BI insights</h1>
+        <p class="lead">We connect QuickBooks to Power BI, clean and model your data, build interactive dashboards and automate reporting — so you make faster, smarter decisions.</p>
+
+        <div class="hero-ctas">
+          <a class="btn primary" href="#contact">Request a Proposal</a>
+          <a class="btn ghost" href="#services">See Services</a>
+        </div>
+
+        <ul class="hero-features" aria-hidden="false">
+          <li>📥 QuickBooks integration & migrations</li>
+          <li>📊 Power BI dashboards & KPI tracking</li>
+          <li>🔁 Scheduled refreshes & automation</li>
+          <li>🎓 Training & handover for your team</li>
+        </ul>
+      </div>
+
+      <div class="hero-right card">
+        <div class="dash-header">
+          <div>
+            <div class="muted">Sample Dashboard</div>
+            <div class="dash-title">Cash Flow Snapshot</div>
+          </div>
+          <div class="muted small">Updated daily</div>
+        </div>
+
+        <div class="dash-visual" aria-hidden="true">
+          <!-- Decorative placeholder that visually suggests charts -->
+          <div class="viz-row">
+            <div class="viz-bar" style="height:58%"></div>
+            <div class="viz-bar" style="height:72%"></div>
+            <div class="viz-bar" style="height:66%"></div>
+            <div class="viz-bar" style="height:82%"></div>
+            <div class="viz-bar" style="height:76%"></div>
+          </div>
+        </div>
+
+        <div class="dash-meta">
+          <div class="meta-item">AR Aging • 30/60/90</div>
+          <div class="meta-item">Profit by Product</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="services">
+    <div class="wrap">
+      <h2>Our Services</h2>
+      <p class="section-sub">Detailed QuickBooks and Power BI services designed for small & medium businesses, accountants and financial managers.</p>
+
+      <div class="services-grid">
+        <article class="service-card">
+          <div class="service-emoji">💼</div>
+          <h3>📌 QuickBooks Setup & Training</h3>
+          <p>We configure QuickBooks for your business: chart of accounts setup, tax settings, invoicing, payment integration and secure user roles. Includes step-by-step training for your staff so they can manage daily operations confidently.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-emoji">🧾</div>
+          <h3>🧹 QuickBooks Cleanup & Bookkeeping</h3>
+          <p>Fix account inconsistencies, reconcile bank accounts, clean historical data and correct invoices/payments. We deliver a clean, audit-ready books state so month-end closes faster and forecasting is more reliable.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-emoji">📊</div>
+          <h3>📈 Power BI Dashboard Creation</h3>
+          <p>Custom Power BI dashboards for cash flow, profit by product, AR aging, expense trends and executive summaries. Role-based views and printable reports designed for managers and accountants.</p>
+        </article>
+
+        <article class="service-card">
+          <div class="service-emoji">🔁</div>
+          <h3>🔄 Power BI Data Automation</h3>
+          <p>Automate ETL and scheduled refreshes from QuickBooks and other sources. We build dataflows that keep dashboards fresh, reduce manual reporting and integrate with Excel/CSV exports when needed.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="testimonials">
+    <div class="wrap">
+      <h2>What Our Clients Say</h2>
+
+      <div class="testimonials-grid" id="testimonialList">
+        <blockquote class="testimonial card">
+          <p>“Nedd Digital transformed our reporting process. The Power BI dashboards are game-changers!”</p>
+          <cite>- Alex Johnson, Retail</cite>
+        </blockquote>
+
+        <blockquote class="testimonial card">
+          <p>“QuickBooks cleanup saved us time and fixed long-standing reconciliation errors.”</p>
+          <cite>- Sarah Williams, Services</cite>
+        </blockquote>
+      </div>
+
+      <div class="testimonial-form card">
+        <h3>Share Your Experience</h3>
+        <p class="muted small">Your testimonial helps others understand how we help businesses.</p>
+        <input id="tName" type="text" placeholder="Your name" aria-label="Your name">
+        <textarea id="tMessage" rows="4" placeholder="Your testimonial" aria-label="Your testimonial"></textarea>
+        <div class="form-row center">
+          <button id="addTestimonialBtn" class="btn primary">Submit</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <div class="wrap contact-inner">
+      <div class="contact-card card">
+        <h2>Contact Us</h2>
+        <p class="muted">Tell us about your QuickBooks / reporting needs and we’ll reply with a tailored proposal.</p>
+
+        <form id="contactForm" onsubmit="return false;">
+          <input id="cName" type="text" placeholder="Your name" required>
+          <input id="cEmail" type="email" placeholder="Your email" required>
+          <input id="cCompany" type="text" placeholder="Company (optional)">
+          <textarea id="cMessage" rows="5" placeholder="Describe your QuickBooks / reporting challenge" required></textarea>
+
+          <!-- center the submit -->
+          <div class="form-row center">
+            <button id="sendBtn" class="btn primary" type="submit">Send Request</button>
+          </div>
+        </form>
+
+        <div class="contact-quick muted small">
+          Quick contact: <a href="mailto:nedddigital1@gmail.com">nedddigital1@gmail.com</a> • WhatsApp: <a href="https://wa.me/19405852063" target="_blank" rel="noopener">+1 (940) 585-2063</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Floating Quick Contact -->
+  <div class="quick-contact" id="quickContact">
+    <button id="qcToggle" class="qc-button" aria-label="Open quick contact">
+      💬
+    </button>
+
+    <div class="qc-menu" id="qcMenu" aria-hidden="true">
+      <a class="qc-item" id="qcWhats" href="https://wa.me/19405852063" target="_blank" rel="noopener">
+        <span>💚</span> WhatsApp
+      </a>
+      <a class="qc-item" id="qcMail" href="mailto:nedddigital1@gmail.com">
+        <span>✉️</span> Email
+      </a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div>© <strong>Nedd Digital</strong> — Your Partner for QuickBooks &amp; Power BI Solutions</div>
+      <div class="muted small">Empowering businesses with smart QuickBooks & Power BI solutions</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
