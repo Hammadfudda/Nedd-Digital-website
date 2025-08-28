@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Privacy Policy — Nedd Digital</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-50 text-slate-900">
+  <!-- Header (same) -->
+  <header class="sticky top-0 z-50 bg-gradient-to-r from-sky-900 to-sky-800 text-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="h-16 flex items-center justify-between">
+        <a href="index.html" class="flex items-center gap-3">
+          <img width="40" height="40" src="/images/nedddigitallogo.png" alt="Nedd Digital"/>
+          <div>
+            <div class="font-extrabold leading-none">Nedd Digital</div>
+            <div class="text-xs/none opacity-90  mt-2">QuickBooks • Power BI</div>
+          </div>
+        </a>
+        <nav class="hidden md:flex items-center gap-6 font-semibold">
+          <a data-nav href="index.html" class="hover:opacity-80">Home</a>
+          <a data-nav href="services.html" class="hover:opacity-80">Services</a>
+          <a data-nav href="portfolio.html" class="hover:opacity-80">Portfolio</a>
+          <a data-nav href="testimonials.html" class="hover:opacity-80">Testimonials</a>
+          <a data-nav href="privacy.html" class="hover:opacity-80">Privacy</a>
+          <a data-nav href="contact.html" class="px-4 py-2 rounded-full bg-amber-400 text-sky-900 hover:brightness-95">Contact</a>
+        </nav>
+        <button id="navToggle" class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-md ring-1 ring-white/30">
+          <svg id="navIcon" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" stroke="currentColor" fill="none">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16"/>
+          </svg>
+        </button>
+      </div>
+      <nav id="mobileNav" class="md:hidden hidden pb-4 font-semibold">
+        <div class="grid gap-2">
+          <a data-nav href="index.html" class="px-3 py-2 rounded hover:bg-white/10">Home</a>
+          <a data-nav href="services.html" class="px-3 py-2 rounded hover:bg-white/10">Services</a>
+          <a data-nav href="portfolio.html" class="px-3 py-2 rounded hover:bg-white/10">Portfolio</a>
+          <a data-nav href="testimonials.html" class="px-3 py-2 rounded hover:bg-white/10">Testimonials</a>
+          <a data-nav href="privacy.html" class="px-3 py-2 rounded hover:bg-white/10">Privacy</a>
+          <a data-nav href="contact.html" class="px-3 py-2 rounded bg-amber-400 text-sky-900">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="py-10 md:py-16">
+    <div class="max-w-3xl mx-auto px-4">
+      <h1 class="text-3xl md:text-5xl font-extrabold">Privacy Policy</h1>
+      <p class="mt-3 text-slate-600">Effective date: <span id="ppDate"></span></p>
+
+      <div class="mt-6 bg-white rounded-2xl shadow p-6 space-y-4 text-slate-700">
+        <p>We respect your privacy. This policy explains what we collect, how we use it, and your choices.</p>
+
+        <h2 class="font-bold text-xl">Information we collect</h2>
+        <ul class="list-disc pl-5 space-y-1">
+          <li>Contact form details (name, email, company, message).</li>
+          <li>Testimonials you submit (name and feedback).</li>
+          <li>Technical data such as page views and basic analytics.</li>
+        </ul>
+
+        <h2 class="font-bold text-xl">How we use your information</h2>
+        <ul class="list-disc pl-5 space-y-1">
+          <li>To respond to your inquiries and provide proposals.</li>
+          <li>To display testimonials (with your consent on submission).</li>
+          <li>To improve our website and services.</li>
+        </ul>
+
+        <h2 class="font-bold text-xl">Storage and security</h2>
+        <p>We store data in Firebase (Google Cloud). We apply reasonable safeguards; however, no method is 100% secure.</p>
+
+        <h2 class="font-bold text-xl">Sharing</h2>
+        <p>We do not sell your data. We may share with service providers strictly to operate our site (e.g., Firebase).</p>
+
+        <h2 class="font-bold text-xl">Your rights</h2>
+        <p>You may request access, correction, or deletion of your data by contacting us at <a class="text-sky-900 font-semibold hover:underline" href="mailto:nedddigital1@gmail.com">nedddigital1@gmail.com</a>.</p>
+
+        <h2 class="font-bold text-xl">Contact</h2>
+        <p>nedddigital1@gmail.com</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-slate-900 text-slate-300">
+    <div class="max-w-6xl mx-auto px-4 py-6 flex items-center justify-between">
+      <div>© <strong>Nedd Digital</strong></div>
+      <div class="text-sm opacity-80">Your partner for QuickBooks & Power BI</div>
+    </div>
+  </footer>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>

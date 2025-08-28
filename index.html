@@ -1,196 +1,160 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Nedd Digital — QuickBooks & Power BI</title>
-  <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
-  <!-- Inter font (matches modern clean UI) -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <meta name="description" content="QuickBooks bookkeeping and Power BI dashboards for real-time financial insights."/>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico"/>
 
+  <!-- Tailwind CSS (CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <!-- Header -->
-  <header class="site-header">
-    <div class="wrap header-inner">
-      <div class="brand">
-        <img src="/images/nedddigitallogo.png" alt="Nedd Digital logo" class="logo">
-        <div class="brand-text">
-          <div class="brand-title">Nedd Digital</div>
-          <div class="brand-sub">QuickBooks • Power BI</div>
-        </div>
-      </div>
+<body class="bg-slate-50 text-slate-900">
 
-      <nav class="top-nav" aria-label="Main navigation">
-        <a href="#services">Services</a>
-        <a href="#testimonials">Testimonials</a>
-        <a href="#contact">Contact</a>
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-gradient-to-r from-sky-900 to-sky-800 text-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="h-16 flex items-center justify-between">
+        <a href="index.html" class="flex items-center gap-3">
+          <img width="40" height="40" src="/images/nedddigitallogo.png" alt="Nedd Digital"/>
+          <div>
+            <div class="font-extrabold leading-none">Nedd Digital</div>
+            <div class="text-xs/none opacity-90 mt-2">QuickBooks • Power BI</div>
+          </div>
+        </a>
+        <nav class="hidden md:flex items-center gap-6 font-semibold">
+          <a data-nav href="index.html" class="hover:opacity-80">Home</a>
+          <a data-nav href="services.html" class="hover:opacity-80">Services</a>
+          <a data-nav href="portfolio.html" class="hover:opacity-80">Portfolio</a>
+          <a data-nav href="testimonials.html" class="hover:opacity-80">Testimonials</a>
+          <a data-nav href="privacy.html" class="hover:opacity-80">Privacy</a>
+          <a data-nav href="contact.html" class="px-4 py-2 rounded-full bg-amber-400 text-sky-900 hover:brightness-95">Contact</a>
+        </nav>
+        <button id="navToggle" class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-md ring-1 ring-white/30">
+          <span class="sr-only">Open Menu</span>
+          <svg id="navIcon" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16"/>
+          </svg>
+        </button>
+      </div>
+      <nav id="mobileNav" class="md:hidden hidden pb-4 font-semibold">
+        <div class="grid gap-2">
+          <a data-nav href="index.html" class="px-3 py-2 rounded hover:bg-white/10">Home</a>
+          <a data-nav href="services.html" class="px-3 py-2 rounded hover:bg-white/10">Services</a>
+          <a data-nav href="portfolio.html" class="px-3 py-2 rounded hover:bg-white/10">Portfolio</a>
+          <a data-nav href="testimonials.html" class="px-3 py-2 rounded hover:bg-white/10">Testimonials</a>
+          <a data-nav href="privacy.html" class="px-3 py-2 rounded hover:bg-white/10">Privacy</a>
+          <a data-nav href="contact.html" class="px-3 py-2 rounded bg-amber-400 text-sky-900">Contact</a>
+        </div>
       </nav>
     </div>
   </header>
 
   <!-- Hero -->
-  <section class="hero">
-    <div class="wrap hero-inner">
-      <div class="hero-left">
-        <h1>Turn QuickBooks data into clear, actionable Power BI insights</h1>
-        <p class="lead">We connect QuickBooks to Power BI, clean and model your data, build interactive dashboards and automate reporting — so you make faster, smarter decisions.</p>
-
-        <div class="hero-ctas">
-          <a class="btn primary" href="#contact">Request a Proposal</a>
-          <a class="btn ghost" href="#services">See Services</a>
+  <section class="py-10 md:py-16">
+    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">
+      <div>
+        <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight">Turn your financial data into clear decisions</h1>
+        <p class="mt-4 text-slate-600">We connect <strong>QuickBooks</strong> to <strong>Power BI</strong> and build dashboards that show cash flow, profitability, and KPIs in real time—plus ongoing bookkeeping support.</p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="contact.html" class="px-5 py-3 rounded-full bg-amber-400 text-sky-900 font-bold hover:brightness-95">Request a Proposal</a>
+          <a href="services.html" class="px-5 py-3 rounded-full ring-2 ring-sky-800 text-sky-900 bg-white font-bold hover:bg-slate-100">See Services</a>
         </div>
-
-        <ul class="hero-features" aria-hidden="false">
+        <ul class="mt-6 grid gap-2 text-slate-700">
           <li>📥 QuickBooks integration & migrations</li>
+          <li>📒 QuickBooks bookkeeping & ongoing support</li>
           <li>📊 Power BI dashboards & KPI tracking</li>
           <li>🔁 Scheduled refreshes & automation</li>
-          <li>🎓 Training & handover for your team</li>
         </ul>
       </div>
-
-      <div class="hero-right card">
-        <div class="dash-header">
+      <div class="bg-white rounded-2xl shadow-lg p-5">
+        <div class="flex items-center justify-between">
           <div>
-            <div class="muted">Sample Dashboard</div>
-            <div class="dash-title">Cash Flow Snapshot</div>
+            <div class="text-slate-500 text-sm">Sample Dashboard</div>
+            <div class="font-bold">Cash Flow Snapshot</div>
           </div>
-          <div class="muted small">Updated daily</div>
+          <div class="text-xs text-slate-500">Updated daily</div>
         </div>
-
-        <div class="dash-visual" aria-hidden="true">
-          <!-- Decorative placeholder that visually suggests charts -->
-          <div class="viz-row">
-            <div class="viz-bar" style="height:58%"></div>
-            <div class="viz-bar" style="height:72%"></div>
-            <div class="viz-bar" style="height:66%"></div>
-            <div class="viz-bar" style="height:82%"></div>
-            <div class="viz-bar" style="height:76%"></div>
-          </div>
-        </div>
-
-        <div class="dash-meta">
-          <div class="meta-item">AR Aging • 30/60/90</div>
-          <div class="meta-item">Profit by Product</div>
+        <div class="mt-4 flex items-end gap-2 h-32">
+          <div class="flex-1 bg-gradient-to-b from-sky-400 to-blue-200 rounded-md" style="height:58%"></div>
+          <div class="flex-1 bg-gradient-to-b from-sky-400 to-blue-200 rounded-md" style="height:72%"></div>
+          <div class="flex-1 bg-gradient-to-b from-sky-400 to-blue-200 rounded-md" style="height:66%"></div>
+          <div class="flex-1 bg-gradient-to-b from-sky-400 to-blue-200 rounded-md" style="height:84%"></div>
+          <div class="flex-1 bg-gradient-to-b from-sky-400 to-blue-200 rounded-md" style="height:70%"></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Services -->
-  <section id="services" class="services">
-    <div class="wrap">
-      <h2>Our Services</h2>
-      <p class="section-sub">Detailed QuickBooks and Power BI services designed for small & medium businesses, accountants and financial managers.</p>
+  <!-- Tools row -->
+  <section class="py-4">
+    <div class="max-w-6xl mx-auto px-4">
+      <p class="text-slate-600">Built around the tools you already use</p>
+      <div class="mt-3 flex items-center gap-5">
+        <svg class="w-10 h-10" viewBox="0 0 24 24" aria-label="Power BI"><rect width="24" height="24" rx="6" fill="#f2c811"/><rect x="5" y="10" width="2.4" height="7" rx="1" fill="#000"/><rect x="9" y="7" width="2.4" height="10" rx="1" fill="#000"/><rect x="13" y="5" width="2.4" height="12" rx="1" fill="#000"/><rect x="17" y="12" width="2.4" height="5" rx="1" fill="#000"/></svg>
+        <svg class="w-10 h-10" viewBox="0 0 24 24" aria-label="QuickBooks"><circle cx="12" cy="12" r="10" fill="#2ca01c"/><path d="M8.5 8h3.5a3.5 3.5 0 110 7H11v1H9v-1H8v-2h1v-3H8V8.5A.5.5 0 018.5 8zM11 10v3h1a1.5 1.5 0 100-3h-1z" fill="#fff"/></svg>
+      </div>
+    </div>
+  </section>
 
-      <div class="services-grid">
-        <article class="service-card">
-          <div class="service-emoji">💼</div>
-          <h3>📌 QuickBooks Setup & Training</h3>
-          <p>We configure QuickBooks for your business: chart of accounts setup, tax settings, invoicing, payment integration and secure user roles. Includes step-by-step training for your staff so they can manage daily operations confidently.</p>
+  <!-- Services preview -->
+  <section class="py-10">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-extrabold">What we do</h2>
+      <p class="mt-2 text-slate-600 max-w-3xl">From cleaning up your books to building decision-ready dashboards, we partner with you end-to-end.</p>
+      <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <article class="bg-white rounded-2xl shadow p-5">
+          <h3 class="font-bold text-lg">📒 Bookkeeping & Monthly Close</h3>
+          <p class="mt-1 text-slate-600">Daily bookkeeping, reconciliations, payroll allocation, and on-time monthly closes inside QuickBooks.</p>
         </article>
-
-        <article class="service-card">
-          <div class="service-emoji">🧾</div>
-          <h3>🧹 QuickBooks Cleanup & Bookkeeping</h3>
-          <p>Fix account inconsistencies, reconcile bank accounts, clean historical data and correct invoices/payments. We deliver a clean, audit-ready books state so month-end closes faster and forecasting is more reliable.</p>
+        <article class="bg-white rounded-2xl shadow p-5">
+          <h3 class="font-bold text-lg">📥 QuickBooks Setup & Migrations</h3>
+          <p class="mt-1 text-slate-600">Chart of accounts, opening balances, products/services, and training so your team can operate confidently.</p>
         </article>
-
-        <article class="service-card">
-          <div class="service-emoji">📊</div>
-          <h3>📈 Power BI Dashboard Creation</h3>
-          <p>Custom Power BI dashboards for cash flow, profit by product, AR aging, expense trends and executive summaries. Role-based views and printable reports designed for managers and accountants.</p>
+        <article class="bg-white rounded-2xl shadow p-5">
+          <h3 class="font-bold text-lg">📊 Power BI Dashboards</h3>
+          <p class="mt-1 text-slate-600">Cash flow, profitability, AR/AP aging—clean visuals your team will actually use.</p>
         </article>
-
-        <article class="service-card">
-          <div class="service-emoji">🔁</div>
-          <h3>🔄 Power BI Data Automation</h3>
-          <p>Automate ETL and scheduled refreshes from QuickBooks and other sources. We build dataflows that keep dashboards fresh, reduce manual reporting and integrate with Excel/CSV exports when needed.</p>
+        <article class="bg-white rounded-2xl shadow p-5">
+          <h3 class="font-bold text-lg">🔁 Data Automation</h3>
+          <p class="mt-1 text-slate-600">Scheduled refreshes from QuickBooks to Power BI, automated exports, and Excel/CSV integrations.</p>
         </article>
+      </div>
+      <div class="mt-6">
+        <a href="services.html" class="inline-block px-5 py-3 rounded-full bg-sky-900 text-white font-bold hover:opacity-90">Explore Services</a>
       </div>
     </div>
   </section>
 
   <!-- Testimonials -->
-  <section id="testimonials" class="testimonials">
-    <div class="wrap">
-      <h2>What Our Clients Say</h2>
-
-      <div class="testimonials-grid" id="testimonialList">
-        <blockquote class="testimonial card">
-          <p>“Nedd Digital transformed our reporting process. The Power BI dashboards are game-changers!”</p>
-          <cite>- Alex Johnson, Retail</cite>
-        </blockquote>
-
-        <blockquote class="testimonial card">
-          <p>“QuickBooks cleanup saved us time and fixed long-standing reconciliation errors.”</p>
-          <cite>- Sarah Williams, Services</cite>
-        </blockquote>
-      </div>
-
-      <div class="testimonial-form card">
-        <h3>Share Your Experience</h3>
-        <p class="muted small">Your testimonial helps others understand how we help businesses.</p>
-        <input id="tName" type="text" placeholder="Your name" aria-label="Your name">
-        <textarea id="tMessage" rows="4" placeholder="Your testimonial" aria-label="Your testimonial"></textarea>
-        <div class="form-row center">
-          <button id="addTestimonialBtn" class="btn primary">Submit</button>
-        </div>
-      </div>
+  <section class="py-10">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl font-extrabold">Latest testimonials</h2>
+      <div id="testimonialsList" class="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3"></div>
     </div>
   </section>
 
-  <!-- Contact -->
-  <section id="contact" class="contact">
-    <div class="wrap contact-inner">
-      <div class="contact-card card">
-        <h2>Contact Us</h2>
-        <p class="muted">Tell us about your QuickBooks / reporting needs and we’ll reply with a tailored proposal.</p>
-
-        <form id="contactForm" onsubmit="return false;">
-          <input id="cName" type="text" placeholder="Your name" required>
-          <input id="cEmail" type="email" placeholder="Your email" required>
-          <input id="cCompany" type="text" placeholder="Company (optional)">
-          <textarea id="cMessage" rows="5" placeholder="Describe your QuickBooks / reporting challenge" required></textarea>
-
-          <!-- center the submit -->
-          <div class="form-row center">
-            <button id="sendBtn" class="btn primary" type="submit">Send Request</button>
-          </div>
-        </form>
-
-        <div class="contact-quick muted small">
-          Quick contact: <a href="mailto:nedddigital1@gmail.com">nedddigital1@gmail.com</a> • WhatsApp: <a href="https://wa.me/19405852063" target="_blank" rel="noopener">+1 (940) 585-2063</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Floating Quick Contact -->
-  <div class="quick-contact" id="quickContact">
-    <button id="qcToggle" class="qc-button" aria-label="Open quick contact">
-      💬
-    </button>
-
-    <div class="qc-menu" id="qcMenu" aria-hidden="true">
-      <a class="qc-item" id="qcWhats" href="https://wa.me/19405852063" target="_blank" rel="noopener">
-        <span>💚</span> WhatsApp
-      </a>
-      <a class="qc-item" id="qcMail" href="mailto:nedddigital1@gmail.com">
-        <span>✉️</span> Email
-      </a>
+  <!-- Popup Modal -->
+  <div id="popup" class="fixed inset-0 hidden items-center justify-center bg-black/50 z-50">
+    <div class="bg-white rounded-xl shadow-lg p-6 text-center max-w-sm w-full">
+      <p id="popupMessage" class="text-lg font-semibold"></p>
+      <button onclick="closePopup()" class="mt-4 px-4 py-2 bg-sky-900 text-white rounded-lg hover:bg-sky-700">
+        Close
+      </button>
     </div>
   </div>
 
   <!-- Footer -->
-  <footer class="site-footer">
-    <div class="wrap footer-inner">
-      <div>© <strong>Nedd Digital</strong> — Your Partner for QuickBooks &amp; Power BI Solutions</div>
-      <div class="muted small">Empowering businesses with smart QuickBooks & Power BI solutions</div>
+  <footer class="bg-slate-900 text-slate-300">
+    <div class="max-w-6xl mx-auto px-4 py-6 flex items-center justify-between">
+      <div>© <strong>Nedd Digital</strong></div>
+      <div class="text-sm opacity-80">Your partner for QuickBooks & Power BI</div>
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <!-- Script -->
+  <script type="module" src="script.js"></script>
 </body>
 </html>

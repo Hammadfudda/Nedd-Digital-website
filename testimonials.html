@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Testimonials — Nedd Digital</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-50 text-slate-900">
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-gradient-to-r from-sky-900 to-sky-800 text-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="h-16 flex items-center justify-between">
+        <a href="index.html" class="flex items-center gap-3">
+          <img width="40" height="40" src="/images/nedddigitallogo.png" alt="Nedd Digital"/>
+          <div>
+            <div class="font-extrabold leading-none">Nedd Digital</div>
+            <div class="text-xs/none opacity-90  mt-2">QuickBooks • Power BI</div>
+          </div>
+        </a>
+        <nav class="hidden md:flex items-center gap-6 font-semibold">
+          <a data-nav href="index.html" class="hover:opacity-80">Home</a>
+          <a data-nav href="services.html" class="hover:opacity-80">Services</a>
+          <a data-nav href="portfolio.html" class="hover:opacity-80">Portfolio</a>
+          <a data-nav href="testimonials.html" class="hover:opacity-80">Testimonials</a>
+          <a data-nav href="privacy.html" class="hover:opacity-80">Privacy</a>
+          <a data-nav href="contact.html" class="px-4 py-2 rounded-full bg-amber-400 text-sky-900 hover:brightness-95">Contact</a>
+        </nav>
+        <button id="navToggle" class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-md ring-1 ring-white/30">
+          <svg id="navIcon" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" stroke="currentColor" fill="none">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16"/>
+          </svg>
+        </button>
+      </div>
+      <nav id="mobileNav" class="md:hidden hidden pb-4 font-semibold">
+        <div class="grid gap-2">
+          <a data-nav href="index.html" class="px-3 py-2 rounded hover:bg-white/10">Home</a>
+          <a data-nav href="services.html" class="px-3 py-2 rounded hover:bg-white/10">Services</a>
+          <a data-nav href="portfolio.html" class="px-3 py-2 rounded hover:bg-white/10">Portfolio</a>
+          <a data-nav href="testimonials.html" class="px-3 py-2 rounded hover:bg-white/10">Testimonials</a>
+          <a data-nav href="privacy.html" class="px-3 py-2 rounded hover:bg-white/10">Privacy</a>
+          <a data-nav href="contact.html" class="px-3 py-2 rounded bg-amber-400 text-sky-900">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="py-10 md:py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <h1 class="text-3xl md:text-5xl font-extrabold">What clients say</h1>
+      <p class="mt-3 text-slate-600 max-w-3xl">Submit a new testimonial below. Approved testimonials are displayed publicly.</p>
+
+      <!-- Form -->
+      <form id="testimonialForm" class="mt-6 bg-white rounded-2xl shadow p-6 max-w-xl">
+        <div class="grid gap-3">
+          <input id="testimonialName" type="text" placeholder="Your Name *" required
+                 class="w-full px-4 py-3 rounded-xl ring-1 ring-slate-300 focus:ring-2 focus:ring-sky-400 outline-none">
+          <textarea id="testimonialMessage" placeholder="Your Testimonial *" required
+                    class="w-full min-h-[140px] px-4 py-3 rounded-xl ring-1 ring-slate-300 focus:ring-2 focus:ring-sky-400 outline-none"></textarea>
+          <button id="tSubmit" type="submit"
+                  class="px-5 py-3 rounded-full bg-sky-900 text-white font-bold hover:opacity-90">Submit Testimonial</button>
+        </div>
+      </form>
+
+       <!-- Display List -->
+  <div class="mt-10">
+    <h2 class="text-2xl font-extrabold">Latest testimonials</h2>
+    <div id="testimonialsList" class="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3"></div>
+  </div>
+</div>
+</section>
+
+<!-- Popup Modal -->
+<div id="popup" class="fixed inset-0 hidden z-50 bg-black/50 flex items-center justify-center p-4">
+  <div class="bg-white rounded-xl shadow-lg p-6 text-center max-w-sm w-full mx-auto">
+    <p id="popupMessage" class="text-lg font-semibold"></p>
+    <button onclick="closePopup()" class="mt-4 px-4 py-2 bg-sky-900 text-white rounded-lg hover:bg-sky-700">
+      Close
+    </button>
+  </div>
+</div>
+
+<footer class="bg-slate-900 text-slate-300">
+  <div class="max-w-6xl mx-auto px-4 py-6 flex items-center justify-between">
+    <div>© <strong>Nedd Digital</strong></div>
+    <div class="text-sm opacity-80">Your partner for QuickBooks & Power BI</div>
+  </div>
+</footer>
+
+<script type="module" src="script.js"></script>
+</body>
+</html>
