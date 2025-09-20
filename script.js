@@ -34,6 +34,27 @@ window.closePopup = function() {
   if (popup) popup.classList.add("hidden");
 };
 
+// ---------------- Helper: Format 12-Hour Time ----------------
+function formatTo12Hour(time24) {
+  if (!time24) return "";
+  const [hourStr, minute] = time24.split(":");
+  let hour = parseInt(hourStr, 10);
+  const ampm = hour >= 12 ? "PM" : "AM";
+  hour = hour % 12 || 12;
+  return `${hour}:${minute} ${ampm}`;
+}
+
+// ---------------- Helper: Convert PK Time to US Eastern ----------------
+function convertPKtoUS(date, time) {
+  try {
+    const [hour, minute] = time.split(":").map(Number);
+    const pkDate = new Date(`${date}T${time}:00+05:00`); // Pakistan time
+    return pkDate.toLocaleTimeString("en-US", { timeZone: "America/New_York", hour12: true, hour: "numeric", minute: "numeric" });
+  } catch {
+    return "";
+  }
+}
+
 // ---------------- DOM Loaded ----------------
 document.addEventListener("DOMContentLoaded", async () => {
   // Mobile Nav Toggle
@@ -67,7 +88,8 @@ async function loadSlots() {
       const data = doc.data();
       // Only show slots that are not booked
       if (data.date && data.time && !data.booked) {
-        slots.push(`${data.date} - ${data.time}`);
+        const usTime = convertPKtoUS(data.date, data.time);
+        slots.push(`${data.date} - ${usTime}`);
       }
     });
 
@@ -104,6 +126,9 @@ if (contactForm) {
       return;
     }
 
+    // Show loader
+    showPopup("⏳ Sending your message...");
+
     try {
       // Save booking into "contacts" (admin reads this)
       await addDoc(collection(db, "contacts"), {
@@ -126,16 +151,19 @@ if (contactForm) {
       });
 
       // Update slot status as booked
-      const [date, time] = slot.split(" - ");
+      const [date, timeUS] = slot.split(" - ");
+      // Convert US time back to PK time to update slot
       const slotsRef = collection(db, "slots");
-      const q = query(slotsRef, where("date", "==", date), where("time", "==", time));
-      const snapshot = await getDocs(q);
-
+      const snapshot = await getDocs(query(slotsRef, where("date", "==", date)));
       snapshot.forEach(async (docSnap) => {
-        await updateDoc(doc(db, "slots", docSnap.id), { booked: true });
+        const slotData = docSnap.data();
+        const usTimeSlot = convertPKtoUS(slotData.date, slotData.time);
+        if (usTimeSlot === timeUS) {
+          await updateDoc(doc(db, "slots", docSnap.id), { booked: true });
+        }
       });
 
-      showPopup("✅ Your message and demo call request have been sent!");
+      showPopup("✅ Our team will contact you soon!");
       contactForm.reset();
       await loadSlots(); // refresh slots
     } catch (err) {
@@ -152,6 +180,9 @@ if (testimonialForm) {
     e.preventDefault();
     const name = document.getElementById("testimonialName").value.trim();
     const testimonial = document.getElementById("testimonialMessage").value.trim();
+
+    // Show loader
+    showPopup("⏳ Submitting your testimonial...");
 
     try {
       await addDoc(collection(db, "testimonials"), {
