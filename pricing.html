@@ -68,635 +68,773 @@
 </header>
 
   <!-- Hero Section -->
-  <section class="bg-gradient-to-br from-sky-900 via-sky-800 to-sky-700 text-white py-16 md:py-24">
-    <div class="max-w-6xl mx-auto px-4 text-center">
-      <h1 class="text-4xl md:text-6xl font-extrabold mb-4">Clear, Transparent Pricing</h1>
-      <p class="text-xl md:text-2xl opacity-90 max-w-3xl mx-auto">No hidden fees. No surprises. Choose the package that fits your business needs.</p>
-      <div class="mt-8 inline-flex flex-col sm:flex-row gap-3 bg-white/10 backdrop-blur-sm rounded-full p-2">
-        <button onclick="showBookkeeping()" id="btnBookkeeping" class="px-6 py-3 rounded-full bg-amber-400 text-sky-900 font-bold transition-all">
-          📚 Bookkeeping Packages
-        </button>
-        <button onclick="showDashboards()" id="btnDashboards" class="px-6 py-3 rounded-full hover:bg-white/20 text-white font-bold transition-all">
-          📊 Dashboard Packages
-        </button>
+<section class="bg-gradient-to-br from-sky-900 via-sky-800 to-sky-700 text-white py-16 md:py-24">
+  <div class="max-w-6xl mx-auto px-4 text-center">
+    <h1 class="text-4xl md:text-6xl font-extrabold mb-4">Clear, Transparent Pricing</h1>
+    <p class="text-xl md:text-2xl opacity-90 max-w-3xl mx-auto">No hidden fees. No surprises. Choose the package that fits your business needs.</p>
+    <div class="mt-8 inline-flex flex-col sm:flex-row gap-3 bg-white/10 backdrop-blur-sm rounded-full p-2">
+      <button onclick="showBookkeeping()" id="btnBookkeeping" class="px-6 py-3 rounded-full bg-amber-400 text-sky-900 font-bold transition-all">
+        📚 Bookkeeping Packages
+      </button>
+      <button onclick="showDashboards()" id="btnDashboards" class="px-6 py-3 rounded-full hover:bg-white/20 text-white font-bold transition-all">
+        📊 Dashboard Packages
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- Problem Statement -->
+<section class="py-12 md:py-16 bg-red-50 border-y-4 border-red-200">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-3xl md:text-4xl font-extrabold text-red-900 mb-6 text-center">Is This Your Reality? 🚨</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-white rounded-xl shadow-lg p-6 border-l-4 border-red-500">
+        <div class="text-4xl mb-3">😰</div>
+        <h3 class="font-bold text-xl mb-2 text-red-900">Messy Books</h3>
+        <p class="text-slate-600">QuickBooks is a disaster. Transactions uncategorized. Accounts not reconciled for months.</p>
+      </div>
+      <div class="bg-white rounded-xl shadow-lg p-6 border-l-4 border-red-500">
+        <div class="text-4xl mb-3">📊</div>
+        <h3 class="font-bold text-xl mb-2 text-red-900">Spreadsheet Hell</h3>
+        <p class="text-slate-600">Hours wasted copying data into Excel. Manual reports that are outdated the moment you finish them.</p>
+      </div>
+      <div class="bg-white rounded-xl shadow-lg p-6 border-l-4 border-red-500">
+        <div class="text-4xl mb-3">❓</div>
+        <h3 class="font-bold text-xl mb-2 text-red-900">No Visibility</h3>
+        <p class="text-slate-600">Can't answer "How's our cash flow?" or "Are we profitable?" without digging for hours.</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Problem Statement -->
-  <section class="py-12 md:py-16 bg-red-50 border-y-4 border-red-200">
-    <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-3xl md:text-4xl font-extrabold text-red-900 mb-6 text-center">Is This Your Reality? 🚨</h2>
+<!-- Solution -->
+<section class="py-12 md:py-16 bg-emerald-50">
+  <div class="max-w-6xl mx-auto px-4 text-center">
+    <h2 class="text-3xl md:text-4xl font-extrabold text-emerald-900 mb-4">We Solve All of This ✅</h2>
+    <p class="text-xl text-slate-700 max-w-3xl mx-auto mb-8">Clean books + Real-time dashboards = Complete financial clarity</p>
+    <div class="bg-white rounded-2xl shadow-xl p-8 max-w-4xl mx-auto">
+      <div class="grid md:grid-cols-2 gap-8 text-left">
+        <div>
+          <div class="text-3xl mb-3">📚</div>
+          <h3 class="font-bold text-xl mb-3 text-sky-900">QuickBooks Bookkeeping</h3>
+          <ul class="space-y-2 text-slate-600">
+            <li>✓ Monthly/weekly/daily transaction entry</li>
+            <li>✓ Bank & credit card reconciliation</li>
+            <li>✓ AR/AP tracking & management</li>
+            <li>✓ Clean financials for your CPA</li>
+            <li>✓ WhatsApp support included</li>
+          </ul>
+        </div>
+        <div>
+          <div class="text-3xl mb-3">📊</div>
+          <h3 class="font-bold text-xl mb-3 text-sky-900">Power BI Dashboards</h3>
+          <ul class="space-y-2 text-slate-600">
+            <li>✓ Custom interactive dashboards</li>
+            <li>✓ Automated data refresh options</li>
+            <li>✓ Cash flow, P&L, AR aging views</li>
+            <li>✓ Mobile access anywhere</li>
+            <li>✓ Role-based permissions</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKKEEPING PACKAGES -->
+<section id="bookkeepingSection" class="py-16 md:py-20">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-5xl font-extrabold text-sky-900 mb-4">📚 QuickBooks Bookkeeping Packages</h2>
+      <p class="text-xl text-slate-600">Professional bookkeeping + FREE historical dashboard with every package</p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      
+      <!-- Essential Package -->
+      <div class="bg-white rounded-2xl shadow-xl border-2 border-slate-200 overflow-hidden hover:shadow-2xl transition-all duration-300 hover:scale-105">
+        <div class="bg-gradient-to-r from-sky-600 to-sky-700 text-white p-6 text-center">
+          <h3 class="text-2xl font-extrabold mb-2">Essential</h3>
+          <div class="text-4xl font-extrabold mb-2">$500<span class="text-lg font-normal">/month</span></div>
+          <div class="text-sm opacity-90">Setup: $500 one-time</div>
+        </div>
+        <div class="p-6">
+          <div class="mb-4 text-center">
+            <span class="inline-block bg-emerald-100 text-emerald-800 px-4 py-2 rounded-full font-bold text-sm">
+              🎁 FREE Historical Dashboard
+            </span>
+          </div>
+          <h4 class="font-bold text-lg mb-4 text-sky-900">Perfect for small businesses</h4>
+          <ul class="space-y-3 text-slate-600">
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-600 font-bold">✓</span>
+              <span>Up to 100 transactions recorded/month</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-600 font-bold">✓</span>
+              <span>End-of-month transaction entry (28-30th)</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-600 font-bold">✓</span>
+              <span>Bank & credit card reconciliation</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-600 font-bold">✓</span>
+              <span>Basic AR/AP tracking (record only)</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-600 font-bold">✓</span>
+              <span>Monthly financial statements</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-600 font-bold">✓</span>
+              <span>Email support</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-600 font-bold">✓</span>
+              <span>1 historical dashboard (last 3 years data)</span>
+            </li>
+          </ul>
+          <div class="mt-4 bg-amber-50 border-l-4 border-amber-400 p-3 rounded">
+            <p class="text-xs text-slate-700"><strong>Note:</strong> Historical dashboard shows past 3 years of data. No automated refresh included. For live dashboards, see our Dashboard Packages below.</p>
+          </div>
+          <a href="contact.html" class="mt-6 block text-center px-6 py-3 rounded-full bg-sky-900 text-white font-bold hover:bg-sky-800 transition-colors">
+            Get Started
+          </a>
+        </div>
+      </div>
+
+      <!-- Professional Package -->
+      <div class="bg-white rounded-2xl shadow-2xl border-4 border-amber-400 overflow-hidden relative transform md:scale-110">
+        <div class="absolute top-0 right-0 bg-amber-400 text-sky-900 px-4 py-1 rounded-bl-lg font-bold text-sm">
+          MOST POPULAR
+        </div>
+        <div class="bg-gradient-to-r from-sky-700 to-sky-800 text-white p-6 text-center">
+          <h3 class="text-2xl font-extrabold mb-2">Professional</h3>
+          <div class="text-4xl font-extrabold mb-2">$1,200<span class="text-lg font-normal">/month</span></div>
+          <div class="text-sm opacity-90">Setup: $1,500 one-time</div>
+        </div>
+        <div class="p-6">
+          <div class="mb-4 text-center">
+            <span class="inline-block bg-emerald-100 text-emerald-800 px-4 py-2 rounded-full font-bold text-sm">
+              🎁 FREE Historical Dashboard
+            </span>
+          </div>
+          <h4 class="font-bold text-lg mb-4 text-sky-900">Perfect for growing businesses</h4>
+          <ul class="space-y-3 text-slate-600">
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-600 font-bold">✓</span>
+              <span>Up to 300 transactions recorded/month</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-600 font-bold">✓</span>
+              <span>Weekly transaction entry & updates</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-600 font-bold">✓</span>
+              <span>Full AR/AP management (reminders, follow-ups)</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-600 font-bold">✓</span>
+              <span>Payroll allocation & job costing</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-600 font-bold">✓</span>
+              <span>Monthly close process</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-600 font-bold">✓</span>
+              <span>Dedicated bookkeeper</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-600 font-bold">✓</span>
+              <span>WhatsApp priority support</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-600 font-bold">✓</span>
+              <span>1 historical dashboard (last 3 years data)</span>
+            </li>
+          </ul>
+          <div class="mt-4 bg-amber-50 border-l-4 border-amber-400 p-3 rounded">
+            <p class="text-xs text-slate-700"><strong>Note:</strong> Historical dashboard shows past 3 years of data. No automated refresh included. For live dashboards, see our Dashboard Packages below.</p>
+          </div>
+          <a href="contact.html" class="mt-6 block text-center px-6 py-3 rounded-full bg-amber-400 text-sky-900 font-bold hover:brightness-95 transition-all">
+            Get Started
+          </a>
+        </div>
+      </div>
+
+      <!-- Enterprise Package -->
+      <div class="bg-white rounded-2xl shadow-xl border-2 border-slate-200 overflow-hidden hover:shadow-2xl transition-all duration-300 hover:scale-105">
+        <div class="bg-gradient-to-r from-sky-800 to-sky-900 text-white p-6 text-center">
+          <h3 class="text-2xl font-extrabold mb-2">Enterprise</h3>
+          <div class="text-4xl font-extrabold mb-2">$2,500+<span class="text-lg font-normal">/month</span></div>
+          <div class="text-sm opacity-90">Setup: Custom quote</div>
+        </div>
+        <div class="p-6">
+          <div class="mb-4 text-center">
+            <span class="inline-block bg-emerald-100 text-emerald-800 px-4 py-2 rounded-full font-bold text-sm">
+              🎁 FREE Historical Dashboard
+            </span>
+          </div>
+          <h4 class="font-bold text-lg mb-4 text-sky-900">Perfect for large operations</h4>
+          <ul class="space-y-3 text-slate-600">
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-600 font-bold">✓</span>
+              <span>Unlimited transactions</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-600 font-bold">✓</span>
+              <span>Daily transaction processing</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-600 font-bold">✓</span>
+              <span>Full-service bookkeeping</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-600 font-bold">✓</span>
+              <span>Multi-entity management</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-600 font-bold">✓</span>
+              <span>Advanced job/project costing</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-600 font-bold">✓</span>
+              <span>CFO-level support</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-600 font-bold">✓</span>
+              <span>Monthly financial reviews</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-600 font-bold">✓</span>
+              <span>1 historical dashboard (last 3 years data)</span>
+            </li>
+          </ul>
+          <div class="mt-4 bg-amber-50 border-l-4 border-amber-400 p-3 rounded">
+            <p class="text-xs text-slate-700"><strong>Note:</strong> Historical dashboard shows past 3 years of data. No automated refresh included. For live dashboards, see our Dashboard Packages below.</p>
+          </div>
+          <a href="contact.html" class="mt-6 block text-center px-6 py-3 rounded-full bg-sky-900 text-white font-bold hover:bg-sky-800 transition-colors">
+            Contact Us
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- QuickBooks Setup Services -->
+    <div class="mt-16">
+      <h3 class="text-2xl md:text-3xl font-extrabold text-sky-900 mb-8 text-center">🔧 QuickBooks Setup & Migration Services</h3>
       <div class="grid md:grid-cols-3 gap-6">
-        <div class="bg-white rounded-xl shadow-lg p-6 border-l-4 border-red-500">
-          <div class="text-4xl mb-3">😰</div>
-          <h3 class="font-bold text-xl mb-2 text-red-900">Messy Books</h3>
-          <p class="text-slate-600">QuickBooks is a disaster. Transactions uncategorized. Accounts not reconciled for months.</p>
+        <div class="bg-white rounded-xl shadow-lg p-6 border-t-4 border-sky-600">
+          <h4 class="font-bold text-xl mb-3 text-sky-900">Fresh Setup</h4>
+          <div class="text-3xl font-bold text-sky-700 mb-3">$1,500-3,000</div>
+          <ul class="space-y-2 text-slate-600 text-sm">
+            <li>✓ Chart of accounts design</li>
+            <li>✓ Opening balances</li>
+            <li>✓ Products/services setup</li>
+            <li>✓ Bank connections</li>
+            <li>✓ User training</li>
+          </ul>
         </div>
-        <div class="bg-white rounded-xl shadow-lg p-6 border-l-4 border-red-500">
-          <div class="text-4xl mb-3">📊</div>
-          <h3 class="font-bold text-xl mb-2 text-red-900">Spreadsheet Hell</h3>
-          <p class="text-slate-600">Hours wasted copying data into Excel. Manual reports that are outdated the moment you finish them.</p>
+        <div class="bg-white rounded-xl shadow-lg p-6 border-t-4 border-sky-600">
+          <h4 class="font-bold text-xl mb-3 text-sky-900">QuickBooks Cleanup</h4>
+          <div class="text-3xl font-bold text-sky-700 mb-3">$1,000-2,500</div>
+          <ul class="space-y-2 text-slate-600 text-sm">
+            <li>✓ Audit existing file</li>
+            <li>✓ Fix errors & reconcile</li>
+            <li>✓ Reorganize chart of accounts</li>
+            <li>✓ Clean up old data</li>
+            <li>✓ Optimize for reporting</li>
+          </ul>
         </div>
-        <div class="bg-white rounded-xl shadow-lg p-6 border-l-4 border-red-500">
-          <div class="text-4xl mb-3">❓</div>
-          <h3 class="font-bold text-xl mb-2 text-red-900">No Visibility</h3>
-          <p class="text-slate-600">Can't answer "How's our cash flow?" or "Are we profitable?" without digging for hours.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Solution -->
-  <section class="py-12 md:py-16 bg-emerald-50">
-    <div class="max-w-6xl mx-auto px-4 text-center">
-      <h2 class="text-3xl md:text-4xl font-extrabold text-emerald-900 mb-4">We Solve All of This ✅</h2>
-      <p class="text-xl text-slate-700 max-w-3xl mx-auto mb-8">Clean books + Real-time dashboards = Complete financial clarity</p>
-      <div class="bg-white rounded-2xl shadow-xl p-8 max-w-4xl mx-auto">
-        <div class="grid md:grid-cols-2 gap-8 text-left">
-          <div>
-            <div class="text-3xl mb-3">📚</div>
-            <h3 class="font-bold text-xl mb-3 text-sky-900">QuickBooks Bookkeeping</h3>
-            <ul class="space-y-2 text-slate-600">
-              <li>✓ Daily transaction entry & categorization</li>
-              <li>✓ Monthly bank reconciliations</li>
-              <li>✓ AR/AP management</li>
-              <li>✓ Clean financials for your CPA</li>
-              <li>✓ WhatsApp support included</li>
-            </ul>
-          </div>
-          <div>
-            <div class="text-3xl mb-3">📊</div>
-            <h3 class="font-bold text-xl mb-3 text-sky-900">Power BI Dashboards</h3>
-            <ul class="space-y-2 text-slate-600">
-              <li>✓ Custom interactive dashboards</li>
-              <li>✓ Real-time data (auto-refresh)</li>
-              <li>✓ Cash flow, P&L, AR aging views</li>
-              <li>✓ Mobile access anywhere</li>
-              <li>✓ Role-based permissions</li>
-            </ul>
-          </div>
+        <div class="bg-white rounded-xl shadow-lg p-6 border-t-4 border-sky-600">
+          <h4 class="font-bold text-xl mb-3 text-sky-900">Migration Service</h4>
+          <div class="text-3xl font-bold text-sky-700 mb-3">$2,000-4,000</div>
+          <ul class="space-y-2 text-slate-600 text-sm">
+            <li>✓ Desktop to Online migration</li>
+            <li>✓ From Xero/FreshBooks/Wave</li>
+            <li>✓ Data mapping & validation</li>
+            <li>✓ Historical data transfer</li>
+            <li>✓ Post-migration support</li>
+          </ul>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- BOOKKEEPING PACKAGES -->
-  <section id="bookkeepingSection" class="py-16 md:py-20">
-    <div class="max-w-6xl mx-auto px-4">
-      <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-5xl font-extrabold text-sky-900 mb-4">📚 QuickBooks Bookkeeping Packages</h2>
-        <p class="text-xl text-slate-600">Professional bookkeeping + FREE Power BI dashboard with every package</p>
-      </div>
+<!-- DASHBOARD PACKAGES -->
+<section id="dashboardSection" class="py-16 md:py-20 bg-slate-100 hidden">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-5xl font-extrabold text-sky-900 mb-4">📊 Power BI Dashboard Solutions</h2>
+      <p class="text-xl text-slate-600 mb-2">Live, automated dashboards with real-time data refresh</p>
+      <p class="text-lg text-red-600 font-bold">⚠️ All dashboard packages require 12-month commitment</p>
+    </div>
 
-      <div class="grid md:grid-cols-3 gap-8">
-        
-        <!-- Essential Package -->
-        <div class="bg-white rounded-2xl shadow-xl border-2 border-slate-200 overflow-hidden hover:shadow-2xl transition-all duration-300 hover:scale-105">
-          <div class="bg-gradient-to-r from-sky-600 to-sky-700 text-white p-6 text-center">
-            <h3 class="text-2xl font-extrabold mb-2">Essential</h3>
-            <div class="text-4xl font-extrabold mb-2">$500<span class="text-lg font-normal">/month</span></div>
-            <div class="text-sm opacity-90">Setup: $500 one-time</div>
-          </div>
-          <div class="p-6">
-            <div class="mb-4 text-center">
-              <span class="inline-block bg-emerald-100 text-emerald-800 px-4 py-2 rounded-full font-bold text-sm">
-                🎁 FREE 5-Metric Dashboard
-              </span>
-            </div>
-            <h4 class="font-bold text-lg mb-4 text-sky-900">Perfect for small businesses</h4>
-            <ul class="space-y-3 text-slate-600">
-              <li class="flex items-start gap-2">
-                <span class="text-emerald-600 font-bold">✓</span>
-                <span>Up to 100 transactions/month</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <span class="text-emerald-600 font-bold">✓</span>
-                <span>Monthly transaction entry</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <span class="text-emerald-600 font-bold">✓</span>
-                <span>Bank & credit card reconciliation</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <span class="text-emerald-600 font-bold">✓</span>
-                <span>Basic AR/AP tracking</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <span class="text-emerald-600 font-bold">✓</span>
-                <span>Monthly financial statements</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <span class="text-emerald-600 font-bold">✓</span>
-                <span>Email support</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <span class="text-emerald-600 font-bold">✓</span>
-                <span>1 Power BI dashboard (5 metrics)</span>
-              </li>
-            </ul>
-            <a href="contact.html" class="mt-6 block text-center px-6 py-3 rounded-full bg-sky-900 text-white font-bold hover:bg-sky-800 transition-colors">
-              Get Started
-            </a>
-          </div>
+    <!-- Important Notice -->
+    <div class="mb-12 bg-gradient-to-r from-amber-50 to-orange-50 border-2 border-amber-300 rounded-2xl p-6 shadow-lg">
+      <h3 class="text-2xl font-bold text-amber-900 mb-3 flex items-center gap-2">
+        <span>📌</span> Important: What's Included
+      </h3>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-white rounded-xl p-4 shadow">
+          <h4 class="font-bold text-lg text-sky-900 mb-2">Month 1: Dashboard Build</h4>
+          <ul class="space-y-1 text-sm text-slate-700">
+            <li>✓ Custom dashboard design</li>
+            <li>✓ Data modeling & integration</li>
+            <li>✓ KPI configuration</li>
+            <li>✓ User training included</li>
+          </ul>
         </div>
-
-        <!-- Professional Package -->
-        <div class="bg-white rounded-2xl shadow-2xl border-4 border-amber-400 overflow-hidden relative transform md:scale-110">
-          <div class="absolute top-0 right-0 bg-amber-400 text-sky-900 px-4 py-1 rounded-bl-lg font-bold text-sm">
-            MOST POPULAR
-          </div>
-          <div class="bg-gradient-to-r from-sky-700 to-sky-800 text-white p-6 text-center">
-            <h3 class="text-2xl font-extrabold mb-2">Professional</h3>
-            <div class="text-4xl font-extrabold mb-2">$1,200<span class="text-lg font-normal">/month</span></div>
-            <div class="text-sm opacity-90">Setup: $1,500 one-time</div>
-          </div>
-          <div class="p-6">
-            <div class="mb-4 text-center">
-              <span class="inline-block bg-emerald-100 text-emerald-800 px-4 py-2 rounded-full font-bold text-sm">
-                🎁 FREE 5-Metric Dashboard
-              </span>
-            </div>
-            <h4 class="font-bold text-lg mb-4 text-sky-900">Perfect for growing businesses</h4>
-            <ul class="space-y-3 text-slate-600">
-              <li class="flex items-start gap-2">
-                <span class="text-emerald-600 font-bold">✓</span>
-                <span>Up to 300 transactions/month</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <span class="text-emerald-600 font-bold">✓</span>
-                <span>Weekly transaction entry</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <span class="text-emerald-600 font-bold">✓</span>
-                <span>Full AR/AP management</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <span class="text-emerald-600 font-bold">✓</span>
-                <span>Payroll allocation & job costing</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <span class="text-emerald-600 font-bold">✓</span>
-                <span>Monthly close process</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <span class="text-emerald-600 font-bold">✓</span>
-                <span>Dedicated bookkeeper</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <span class="text-emerald-600 font-bold">✓</span>
-                <span>WhatsApp priority support</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <span class="text-emerald-600 font-bold">✓</span>
-                <span>1 Power BI dashboard (5 metrics)</span>
-              </li>
-            </ul>
-            <a href="contact.html" class="mt-6 block text-center px-6 py-3 rounded-full bg-amber-400 text-sky-900 font-bold hover:brightness-95 transition-all">
-              Get Started
-            </a>
-          </div>
-        </div>
-
-        <!-- Enterprise Package -->
-        <div class="bg-white rounded-2xl shadow-xl border-2 border-slate-200 overflow-hidden hover:shadow-2xl transition-all duration-300 hover:scale-105">
-          <div class="bg-gradient-to-r from-sky-800 to-sky-900 text-white p-6 text-center">
-            <h3 class="text-2xl font-extrabold mb-2">Enterprise</h3>
-            <div class="text-4xl font-extrabold mb-2">$2,500+<span class="text-lg font-normal">/month</span></div>
-            <div class="text-sm opacity-90">Setup: Custom quote</div>
-          </div>
-          <div class="p-6">
-            <div class="mb-4 text-center">
-              <span class="inline-block bg-emerald-100 text-emerald-800 px-4 py-2 rounded-full font-bold text-sm">
-                🎁 FREE 5-Metric Dashboard
-              </span>
-            </div>
-            <h4 class="font-bold text-lg mb-4 text-sky-900">Perfect for large operations</h4>
-            <ul class="space-y-3 text-slate-600">
-              <li class="flex items-start gap-2">
-                <span class="text-emerald-600 font-bold">✓</span>
-                <span>Unlimited transactions</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <span class="text-emerald-600 font-bold">✓</span>
-                <span>Daily transaction processing</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <span class="text-emerald-600 font-bold">✓</span>
-                <span>Full-service bookkeeping</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <span class="text-emerald-600 font-bold">✓</span>
-                <span>Multi-entity management</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <span class="text-emerald-600 font-bold">✓</span>
-                <span>Advanced job/project costing</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <span class="text-emerald-600 font-bold">✓</span>
-                <span>CFO-level support</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <span class="text-emerald-600 font-bold">✓</span>
-                <span>Monthly financial reviews</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <span class="text-emerald-600 font-bold">✓</span>
-                <span>1 Power BI dashboard (5 metrics)</span>
-              </li>
-            </ul>
-            <a href="contact.html" class="mt-6 block text-center px-6 py-3 rounded-full bg-sky-900 text-white font-bold hover:bg-sky-800 transition-colors">
-              Contact Us
-            </a>
-          </div>
+        <div class="bg-white rounded-xl p-4 shadow border-2 border-emerald-300">
+          <h4 class="font-bold text-lg text-emerald-900 mb-2">Months 2-12: Ongoing Service</h4>
+          <ul class="space-y-1 text-sm text-slate-700">
+            <li>✓ Automated data refresh (daily/hourly/real-time)</li>
+            <li>✓ Performance monitoring</li>
+            <li>✓ Minor updates & fixes</li>
+            <li>✓ Ongoing support</li>
+          </ul>
         </div>
       </div>
-
-      <!-- QuickBooks Setup Services -->
-      <div class="mt-16">
-        <h3 class="text-2xl md:text-3xl font-extrabold text-sky-900 mb-8 text-center">🔧 QuickBooks Setup & Migration Services</h3>
-        <div class="grid md:grid-cols-3 gap-6">
-          <div class="bg-white rounded-xl shadow-lg p-6 border-t-4 border-sky-600">
-            <h4 class="font-bold text-xl mb-3 text-sky-900">Fresh Setup</h4>
-            <div class="text-3xl font-bold text-sky-700 mb-3">$1,500-3,000</div>
-            <ul class="space-y-2 text-slate-600 text-sm">
-              <li>✓ Chart of accounts design</li>
-              <li>✓ Opening balances</li>
-              <li>✓ Products/services setup</li>
-              <li>✓ Bank connections</li>
-              <li>✓ User training</li>
-            </ul>
-          </div>
-          <div class="bg-white rounded-xl shadow-lg p-6 border-t-4 border-sky-600">
-            <h4 class="font-bold text-xl mb-3 text-sky-900">QuickBooks Cleanup</h4>
-            <div class="text-3xl font-bold text-sky-700 mb-3">$1,000-2,500</div>
-            <ul class="space-y-2 text-slate-600 text-sm">
-              <li>✓ Audit existing file</li>
-              <li>✓ Fix errors & reconcile</li>
-              <li>✓ Reorganize chart of accounts</li>
-              <li>✓ Clean up old data</li>
-              <li>✓ Optimize for reporting</li>
-            </ul>
-          </div>
-          <div class="bg-white rounded-xl shadow-lg p-6 border-t-4 border-sky-600">
-            <h4 class="font-bold text-xl mb-3 text-sky-900">Migration Service</h4>
-            <div class="text-3xl font-bold text-sky-700 mb-3">$2,000-4,000</div>
-            <ul class="space-y-2 text-slate-600 text-sm">
-              <li>✓ Desktop to Online migration</li>
-              <li>✓ From Xero/FreshBooks/Wave</li>
-              <li>✓ Data mapping & validation</li>
-              <li>✓ Historical data transfer</li>
-              <li>✓ Post-migration support</li>
-            </ul>
-          </div>
-        </div>
+      <div class="mt-4 bg-red-50 border-l-4 border-red-500 p-4 rounded">
+        <p class="text-sm text-red-900"><strong>⚠️ Contract Terms:</strong> All plans require 12-month minimum commitment. Early cancellation fee: $1,000 + 50% of remaining months. Dashboard files transferred to you after contract completion.</p>
       </div>
     </div>
-  </section>
 
-  <!-- DASHBOARD PACKAGES -->
-  <section id="dashboardSection" class="py-16 md:py-20 bg-slate-100 hidden">
-    <div class="max-w-6xl mx-auto px-4">
-      <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-5xl font-extrabold text-sky-900 mb-4">📊 Power BI Dashboard Packages</h2>
-        <p class="text-xl text-slate-600">Already have clean books? Just need dashboards? We've got you covered.</p>
-      </div>
-
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-        
-        <!-- Starter -->
-        <div class="bg-white rounded-2xl shadow-xl border-2 border-slate-200 overflow-hidden hover:shadow-2xl transition-all duration-300">
-          <div class="bg-gradient-to-r from-sky-600 to-sky-700 text-white p-6 text-center">
-            <h3 class="text-xl font-extrabold mb-2">Starter</h3>
-            <div class="text-3xl font-extrabold mb-1">$2,500</div>
-            <div class="text-sm opacity-90">one-time</div>
-            <div class="text-xs mt-2 opacity-75">or $400/month subscription</div>
-          </div>
-          <div class="p-6">
-            <div class="mb-4 text-center">
-              <span class="inline-block bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full font-bold text-xs">
-                3 FREE revisions
-              </span>
-            </div>
-            <ul class="space-y-2 text-sm text-slate-600">
-              <li class="flex items-start gap-2">
-                <span class="text-emerald-600 font-bold">✓</span>
-                <span>1 dashboard (10 visuals)</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <span class="text-emerald-600 font-bold">✓</span>
-                <span>QuickBooks integration</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <span class="text-emerald-600 font-bold">✓</span>
-                <span>Daily data refresh</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <span class="text-emerald-600 font-bold">✓</span>
-                <span>2 hours training</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <span class="text-emerald-600 font-bold">✓</span>
-                <span>30 days email support</span>
-              </li>
-            </ul>
-            <a href="contact.html" class="mt-6 block text-center px-4 py-2 rounded-full bg-sky-900 text-white font-bold hover:bg-sky-800 transition-colors text-sm">
-              Get Started
-            </a>
-          </div>
-        </div>
-
-        <!-- Business Intelligence -->
-        <div class="bg-white rounded-2xl shadow-xl border-2 border-slate-200 overflow-hidden hover:shadow-2xl transition-all duration-300">
-          <div class="bg-gradient-to-r from-sky-700 to-sky-800 text-white p-6 text-center">
-            <h3 class="text-xl font-extrabold mb-2">Business</h3>
-            <div class="text-3xl font-extrabold mb-1">$7,500</div>
-            <div class="text-sm opacity-90">one-time</div>
-            <div class="text-xs mt-2 opacity-75">or $800/month subscription</div>
-          </div>
-          <div class="p-6">
-            <div class="mb-4 text-center">
-              <span class="inline-block bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full font-bold text-xs">
-                3 FREE revisions
-              </span>
-            </div>
-            <ul class="space-y-2 text-sm text-slate-600">
-              <li class="flex items-start gap-2">
-                <span class="text-emerald-600 font-bold">✓</span>
-                <span>3 dashboards (30 visuals)</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <span class="text-emerald-600 font-bold">✓</span>
-                <span>QB + Excel integration</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <span class="text-emerald-600 font-bold">✓</span>
-                <span>Hourly data refresh</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <span class="text-emerald-600 font-bold">✓</span>
-                <span>Multi-user (10 users)</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <span class="text-emerald-600 font-bold">✓</span>
-                <span>4 hours training</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <span class="text-emerald-600 font-bold">✓</span>
-                <span>90 days priority support</span>
-              </li>
-            </ul>
-            <a href="contact.html" class="mt-6 block text-center px-4 py-2 rounded-full bg-sky-900 text-white font-bold hover:bg-sky-800 transition-colors text-sm">
-              Get Started
-            </a>
-          </div>
-        </div>
-
-        <!-- Enterprise -->
-        <div class="bg-white rounded-2xl shadow-xl border-2 border-slate-200 overflow-hidden hover:shadow-2xl transition-all duration-300">
-          <div class="bg-gradient-to-r from-sky-800 to-sky-900 text-white p-6 text-center">
-            <h3 class="text-xl font-extrabold mb-2">Enterprise</h3>
-            <div class="text-3xl font-extrabold mb-1">$15,000</div>
-            <div class="text-sm opacity-90">one-time</div>
-            <div class="text-xs mt-2 opacity-75">or $1,500/month subscription</div>
-          </div>
-          <div class="p-6">
-            <div class="mb-4 text-center">
-              <span class="inline-block bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full font-bold text-xs">
-                5 FREE revisions
-              </span>
-            </div>
-            <ul class="space-y-2 text-sm text-slate-600">
-              <li class="flex items-start gap-2">
-                <span class="text-emerald-600 font-bold">✓</span>
-                <span>5 dashboards</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <span class="text-emerald-600 font-bold">✓</span>
-                <span>Multiple data sources</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <span class="text-emerald-600 font-bold">✓</span>
-                <span>Real-time refresh</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <span class="text-emerald-600 font-bold">✓</span>
-                <span>Unlimited users</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <span class="text-emerald-600 font-bold">✓</span>
-                <span>Advanced analytics</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <span class="text-emerald-600 font-bold">✓</span>
-                <span>Dedicated specialist</span>
-              </li>
-            </ul>
-            <a href="contact.html" class="mt-6 block text-center px-4 py-2 rounded-full bg-sky-900 text-white font-bold hover:bg-sky-800 transition-colors text-sm">
-              Contact Us
-            </a>
-          </div>
-        </div>
-
-        <!-- Enterprise Plus -->
-        <div class="bg-white rounded-2xl shadow-xl border-2 border-amber-400 overflow-hidden hover:shadow-2xl transition-all duration-300">
-          <div class="bg-gradient-to-r from-amber-500 to-amber-600 text-white p-6 text-center">
-            <h3 class="text-xl font-extrabold mb-2">Enterprise Plus</h3>
-            <div class="text-3xl font-extrabold mb-1">$25,000+</div>
-            <div class="text-sm opacity-90">one-time</div>
-            <div class="text-xs mt-2 opacity-75">or $2,500+/month subscription</div>
-          </div>
-          <div class="p-6">
-            <div class="mb-4 text-center">
-              <span class="inline-block bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full font-bold text-xs">
-                7 FREE revisions
-              </span>
-            </div>
-            <ul class="space-y-2 text-sm text-slate-600">
-              <li class="flex items-start gap-2">
-                <span class="text-emerald-600 font-bold">✓</span>
-                <span>Unlimited dashboards</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <span class="text-emerald-600 font-bold">✓</span>
-                <span>AI-powered analytics</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <span class="text-emerald-600 font-bold">✓</span>
-                <span>Real-time streaming</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <span class="text-emerald-600 font-bold">✓</span>
-                <span>Enterprise security</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <span class="text-emerald-600 font-bold">✓</span>
-                <span>24/7 priority support</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <span class="text-emerald-600 font-bold">✓</span>
-                <span>Custom integrations</span>
-              </li>
-            </ul>
-            <a href="contact.html" class="mt-6 block text-center px-4 py-2 rounded-full bg-amber-500 text-white font-bold hover:bg-amber-600 transition-colors text-sm">
-              Contact Us
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- One-Time vs Subscription Explanation -->
-      <div class="mt-12 bg-sky-50 rounded-2xl shadow-lg p-8 border-2 border-sky-200">
-        <h3 class="text-2xl font-bold text-sky-900 mb-6 text-center">💡 One-Time vs Subscription - Which to Choose?</h3>
-        <div class="grid md:grid-cols-2 gap-6">
-          <div class="bg-white rounded-xl p-6 shadow">
-            <h4 class="font-bold text-lg mb-3 text-sky-900">One-Time Payment</h4>
-            <p class="text-slate-600 mb-3">You own the dashboards forever. Best if you have in-house IT who can maintain them.</p>
-            <ul class="space-y-2 text-sm text-slate-600">
-              <li>✓ Pay once, own forever</li>
-              <li>✓ Free revisions in first month only</li>
-              <li>✓ Updates after: $150/hour</li>
-              <li>✓ You manage hosting & refresh</li>
-            </ul>
-          </div>
-          <div class="bg-white rounded-xl p-6 shadow border-2 border-emerald-300">
-            <h4 class="font-bold text-lg mb-3 text-emerald-900">Monthly Subscription ⭐ Recommended</h4>
-            <p class="text-slate-600 mb-3">We maintain, update, and support everything ongoing. Best for most businesses.</p>
-            <ul class="space-y-2 text-sm text-slate-600">
-              <li>✓ Monthly updates included</li>
-              <li>✓ Ongoing optimization</li>
-              <li>✓ Priority support</li>
-              <li>✓ We manage everything</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ROI Section -->
-  <section class="py-16 md:py-20 bg-gradient-to-br from-emerald-50 to-emerald-100">
-    <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-3xl md:text-4xl font-extrabold text-center text-emerald-900 mb-12">💰 Return On Investment</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
       
-      <div class="grid md:grid-cols-3 gap-8 mb-12">
-        <div class="bg-white rounded-xl shadow-lg p-8 text-center">
-          <div class="text-5xl font-extrabold text-emerald-600 mb-2">20+</div>
-          <div class="text-slate-600">Hours saved per month on bookkeeping & reporting</div>
+      <!-- Starter -->
+      <div class="bg-white rounded-2xl shadow-xl border-2 border-slate-200 overflow-hidden hover:shadow-2xl transition-all duration-300">
+        <div class="bg-gradient-to-r from-sky-600 to-sky-700 text-white p-6 text-center">
+          <h3 class="text-xl font-extrabold mb-2">Starter</h3>
+          <div class="text-3xl font-extrabold mb-1">$400</div>
+          <div class="text-sm opacity-90">/month</div>
+          <div class="text-xs mt-2 bg-white/20 rounded-full px-3 py-1 inline-block">12-month contract</div>
         </div>
-        <div class="bg-white rounded-xl shadow-lg p-8 text-center">
-          <div class="text-5xl font-extrabold text-emerald-600 mb-2">5-10%</div>
-          <div class="text-slate-600">Average profitability improvement in first year</div>
-        </div>
-        <div class="bg-white rounded-xl shadow-lg p-8 text-center">
-          <div class="text-5xl font-extrabold text-emerald-600 mb-2">3-6</div>
-          <div class="text-slate-600">Months to see positive ROI for most clients</div>
+        <div class="p-6">
+          <div class="mb-4 bg-sky-50 rounded-lg p-3 border border-sky-200">
+            <p class="text-xs text-sky-900 font-semibold text-center">Year 1 Total: $4,800</p>
+            <p class="text-xs text-slate-600 text-center mt-1">(Dashboard build + 12 months service)</p>
+          </div>
+          <ul class="space-y-2 text-sm text-slate-600">
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-600 font-bold">✓</span>
+              <span>1 custom dashboard (10 visuals)</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-600 font-bold">✓</span>
+              <span>QuickBooks integration</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-600 font-bold">✓</span>
+              <span>Daily automated refresh</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-600 font-bold">✓</span>
+              <span>2 hours training</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-600 font-bold">✓</span>
+              <span>Email support (48-hour response)</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-600 font-bold">✓</span>
+              <span>Monthly data accuracy checks</span>
+            </li>
+          </ul>
+          <a href="contact.html" class="mt-6 block text-center px-4 py-2 rounded-full bg-sky-900 text-white font-bold hover:bg-sky-800 transition-colors text-sm">
+            Get Started
+          </a>
         </div>
       </div>
 
-      <div class="bg-white rounded-2xl shadow-xl p-8 max-w-4xl mx-auto">
-        <h3 class="text-2xl font-bold text-sky-900 mb-6 text-center">Real Client Success Stories</h3>
-        <div class="space-y-6">
-          <div class="border-l-4 border-emerald-500 pl-6">
-            <h4 class="font-bold text-lg mb-2">🏗️ Construction Company ($5M revenue)</h4>
-            <p class="text-slate-600">Identified 2 unprofitable projects costing $50K in losses. Adjusted pricing model. <span class="font-bold text-emerald-600">Saved $75K in Year 1.</span></p>
+      <!-- Business -->
+      <div class="bg-white rounded-2xl shadow-xl border-2 border-slate-200 overflow-hidden hover:shadow-2xl transition-all duration-300">
+        <div class="bg-gradient-to-r from-sky-700 to-sky-800 text-white p-6 text-center">
+          <h3 class="text-xl font-extrabold mb-2">Business</h3>
+          <div class="text-3xl font-extrabold mb-1">$800</div>
+          <div class="text-sm opacity-90">/month</div>
+          <div class="text-xs mt-2 bg-white/20 rounded-full px-3 py-1 inline-block">12-month contract</div>
+        </div>
+        <div class="p-6">
+          <div class="mb-4 bg-sky-50 rounded-lg p-3 border border-sky-200">
+            <p class="text-xs text-sky-900 font-semibold text-center">Year 1 Total: $9,600</p>
+            <p class="text-xs text-slate-600 text-center mt-1">(Dashboard build + 12 months service)</p>
           </div>
-          <div class="border-l-4 border-sky-500 pl-6">
-            <h4 class="font-bold text-lg mb-2">🛒 E-commerce Store ($2M revenue)</h4>
-            <p class="text-slate-600">Discovered 30% of products had negative margins. Discontinued losers, focused on winners. <span class="font-bold text-sky-600">Increased profit by $60K.</span></p>
+          <ul class="space-y-2 text-sm text-slate-600">
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-600 font-bold">✓</span>
+              <span>3 dashboards (30 visuals)</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-600 font-bold">✓</span>
+              <span>QuickBooks + Excel integration</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-600 font-bold">✓</span>
+              <span>Hourly automated refresh</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-600 font-bold">✓</span>
+              <span>Multi-user access (10 users)</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-600 font-bold">✓</span>
+              <span>4 hours training</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-600 font-bold">✓</span>
+              <span>Priority support (24-hour response)</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-600 font-bold">✓</span>
+              <span>Bi-weekly data quality reviews</span>
+            </li>
+          </ul>
+          <a href="contact.html" class="mt-6 block text-center px-4 py-2 rounded-full bg-sky-900 text-white font-bold hover:bg-sky-800 transition-colors text-sm">
+            Get Started
+          </a>
+        </div>
+      </div>
+
+      <!-- Enterprise -->
+      <div class="bg-white rounded-2xl shadow-xl border-2 border-slate-200 overflow-hidden hover:shadow-2xl transition-all duration-300">
+        <div class="bg-gradient-to-r from-sky-800 to-sky-900 text-white p-6 text-center">
+          <h3 class="text-xl font-extrabold mb-2">Enterprise</h3>
+          <div class="text-3xl font-extrabold mb-1">$1,500</div>
+          <div class="text-sm opacity-90">/month</div>
+          <div class="text-xs mt-2 bg-white/20 rounded-full px-3 py-1 inline-block">12-month contract</div>
+        </div>
+        <div class="p-6">
+          <div class="mb-4 bg-sky-50 rounded-lg p-3 border border-sky-200">
+            <p class="text-xs text-sky-900 font-semibold text-center">Year 1 Total: $18,000</p>
+            <p class="text-xs text-slate-600 text-center mt-1">(Dashboard build + 12 months service)</p>
           </div>
-          <div class="border-l-4 border-amber-500 pl-6">
-            <h4 class="font-bold text-lg mb-2">💼 Marketing Agency ($3M revenue)</h4>
-            <p class="text-slate-600">Found 3 unprofitable clients. Raised rates or let them go. <span class="font-bold text-amber-600">Improved margins by 12%, added $90K to bottom line.</span></p>
+          <ul class="space-y-2 text-sm text-slate-600">
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-600 font-bold">✓</span>
+              <span>5 dashboards + advanced analytics</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-600 font-bold">✓</span>
+              <span>Multiple data source integration</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-600 font-bold">✓</span>
+              <span>Real-time data refresh</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-600 font-bold">✓</span>
+              <span>Unlimited users</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-600 font-bold">✓</span>
+              <span>8 hours training</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-600 font-bold">✓</span>
+              <span>Dedicated dashboard specialist</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-600 font-bold">✓</span>
+              <span>24/7 priority support</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-600 font-bold">✓</span>
+              <span>Weekly performance reviews</span>
+            </li>
+          </ul>
+          <a href="contact.html" class="mt-6 block text-center px-4 py-2 rounded-full bg-sky-900 text-white font-bold hover:bg-sky-800 transition-colors text-sm">
+            Contact Us
+          </a>
+        </div>
+      </div>
+
+      <!-- Enterprise Plus -->
+      <div class="bg-white rounded-2xl shadow-xl border-2 border-amber-400 overflow-hidden hover:shadow-2xl transition-all duration-300">
+        <div class="bg-gradient-to-r from-amber-500 to-amber-600 text-white p-6 text-center">
+          <h3 class="text-xl font-extrabold mb-2">Enterprise Plus</h3>
+          <div class="text-3xl font-extrabold mb-1">$2,500+</div>
+          <div class="text-sm opacity-90">/month</div>
+          <div class="text-xs mt-2 bg-white/20 rounded-full px-3 py-1 inline-block">12-month contract</div>
+        </div>
+        <div class="p-6">
+          <div class="mb-4 bg-amber-50 rounded-lg p-3 border border-amber-200">
+            <p class="text-xs text-amber-900 font-semibold text-center">Year 1 Total: $30,000+</p>
+            <p class="text-xs text-slate-600 text-center mt-1">(Custom solution + 12 months service)</p>
+          </div>
+          <ul class="space-y-2 text-sm text-slate-600">
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-600 font-bold">✓</span>
+              <span>Unlimited custom dashboards</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-600 font-bold">✓</span>
+              <span>AI-powered analytics & predictions</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-600 font-bold">✓</span>
+              <span>Real-time streaming data</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-600 font-bold">✓</span>
+              <span>Enterprise security & compliance</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-600 font-bold">✓</span>
+              <span>Custom API integrations</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-600 font-bold">✓</span>
+              <span>Dedicated account manager</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-emerald-600 font-bold">✓</span>
+              <span>24/7 emergency support (2-hour response)</span>
+            </li>
+          </ul>
+          <a href="contact.html" class="mt-6 block text-center px-4 py-2 rounded-full bg-amber-500 text-white font-bold hover:bg-amber-600 transition-colors text-sm">
+            Contact Us
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contract Terms Explanation -->
+    <div class="mt-12 bg-slate-50 rounded-2xl shadow-lg p-8 border-2 border-slate-300">
+      <h3 class="text-2xl font-bold text-slate-900 mb-6 text-center">📋 Understanding Your Dashboard Contract</h3>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-white rounded-xl p-6 shadow border-l-4 border-sky-600">
+          <h4 class="font-bold text-lg mb-3 text-sky-900">✅ What's Included</h4>
+          <ul class="space-y-2 text-sm text-slate-700">
+            <li>• Dashboard built in Month 1</li>
+            <li>• Automated refresh for 12 months</li>
+            <li>• Ongoing support & monitoring</li>
+            <li>• Minor updates included</li>
+            <li>• Monthly performance checks</li>
+            <li>• You own dashboard files after Year 1</li>
+          </ul>
+        </div>
+        <div class="bg-white rounded-xl p-6 shadow border-l-4 border-red-600">
+          <h4 class="font-bold text-lg mb-3 text-red-900">❌ What's NOT Included (Charged Separately)</h4>
+          <ul class="space-y-2 text-sm text-slate-700">
+            <li>• New dashboards or additional pages</li>
+            <li>• Major redesigns or complete rebuilds</li>
+            <li>• New data source integrations</li>
+            <li>• Complex DAX formula development</li>
+            <li>• Additional training sessions</li>
+            <li>• Custom feature development</li>
+          </ul>
+        </div>
+      </div>
+      <div class="mt-6 bg-amber-50 border-2 border-amber-300 rounded-xl p-5">
+        <h4 class="font-bold text-lg mb-3 text-amber-900">💡 After Your 12-Month Contract</h4>
+        <div class="grid md:grid-cols-2 gap-4 text-sm text-slate-700">
+          <div>
+            <p class="font-semibold text-sky-900 mb-2">Option 1: Continue Month-to-Month</p>
+            <ul class="space-y-1 pl-4">
+              <li>• Same monthly rate</li>
+              <li>• Ongoing refresh & support</li>
+              <li>• Cancel anytime with 30-day notice</li>
+            </ul>
+          </div>
+          <div>
+            <p class="font-semibold text-sky-900 mb-2">Option 2: Own & Manage Yourself</p>
+            <ul class="space-y-1 pl-4">
+              <li>• Dashboard files transferred to you</li>
+              <li>• You manage refresh yourself</li>
+              <li>• No monthly fees</li>
+              <li>• Future updates: $150/hour</li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
-  </section>
 
-  <!-- FAQ Section -->
-  <section class="py-16 md:py-20">
-    <div class="max-w-4xl mx-auto px-4">
-      <h2 class="text-3xl md:text-4xl font-extrabold text-center text-sky-900 mb-12">❓ Frequently Asked Questions</h2>
-      
+    <!-- Annual Prepay Option -->
+    <div class="mt-8 bg-gradient-to-r from-emerald-50 to-emerald-100 rounded-2xl shadow-lg p-8 border-2 border-emerald-300">
+      <h3 class="text-2xl font-bold text-emerald-900 mb-4 text-center">💰 Save 15% with Annual Prepayment!</h3>
+      <div class="grid md:grid-cols-4 gap-4 text-center">
+        <div class="bg-white rounded-xl p-4 shadow">
+          <p class="text-sm text-slate-600 mb-1">Starter</p>
+          <p class="text-2xl font-bold text-sky-900">$4,080<span class="text-sm font-normal">/year</span></p>
+          <p class="text-xs text-emerald-600 font-semibold">Save $720!</p>
+        </div>
+        <div class="bg-white rounded-xl p-4 shadow">
+          <p class="text-sm text-slate-600 mb-1">Business</p>
+          <p class="text-2xl font-bold text-sky-900">$8,160<span class="text-sm font-normal">/year</span></p>
+          <p class="text-xs text-emerald-600 font-semibold">Save $1,440!</p>
+        </div>
+        <div class="bg-white rounded-xl p-4 shadow">
+          <p class="text-sm text-slate-600 mb-1">Enterprise</p>
+          <p class="text-2xl font-bold text-sky-900">$15,300<span class="text-sm font-normal">/year</span></p>
+          <p class="text-xs text-emerald-600 font-semibold">Save $2,700!</p>
+        </div>
+        <div class="bg-white rounded-xl p-4 shadow">
+          <p class="text-sm text-slate-600 mb-1">Enterprise Plus</p>
+          <p class="text-2xl font-bold text-sky-900">Custom</p>
+          <p class="text-xs text-emerald-600 font-semibold">15% discount</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ROI Section -->
+<section class="py-16 md:py-20 bg-gradient-to-br from-emerald-50 to-emerald-100">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-3xl md:text-4xl font-extrabold text-center text-emerald-900 mb-12">💰 Return On Investment</h2>
+    <div class="grid md:grid-cols-3 gap-8 mb-12">
+      <div class="bg-white rounded-xl shadow-lg p-8 text-center">
+        <div class="text-5xl font-extrabold text-emerald-600 mb-2">20+</div>
+        <div class="text-slate-600">Hours saved per month on bookkeeping & reporting</div>
+      </div>
+      <div class="bg-white rounded-xl shadow-lg p-8 text-center">
+        <div class="text-5xl font-extrabold text-emerald-600 mb-2">5-10%</div>
+        <div class="text-slate-600">Average profitability improvement in first year</div>
+      </div>
+      <div class="bg-white rounded-xl shadow-lg p-8 text-center">
+        <div class="text-5xl font-extrabold text-emerald-600 mb-2">3-6</div>
+        <div class="text-slate-600">Months to see positive ROI for most clients</div>
+      </div>
+    </div>
+
+    <div class="bg-white rounded-2xl shadow-xl p-8 max-w-4xl mx-auto">
+      <h3 class="text-2xl font-bold text-sky-900 mb-6 text-center">Real Client Success Stories</h3>
       <div class="space-y-6">
-        <details class="bg-white rounded-xl shadow-lg p-6 cursor-pointer group">
-          <summary class="font-bold text-lg text-sky-900 list-none flex justify-between items-center">
-            What's included in the FREE dashboard?
-            <span class="text-2xl group-open:rotate-180 transition-transform">▼</span>
-          </summary>
-          <p class="mt-4 text-slate-600">With every bookkeeping package, you get 1 custom Power BI dashboard with up to 5 key metrics of your choice (e.g., cash flow, P&L summary, AR aging, revenue trends, expense breakdown). It includes daily data refresh and mobile access.</p>
-        </details>
-
-        <details class="bg-white rounded-xl shadow-lg p-6 cursor-pointer group">
-          <summary class="font-bold text-lg text-sky-900 list-none flex justify-between items-center">
-            Do I need to purchase Power BI licenses?
-            <span class="text-2xl group-open:rotate-180 transition-transform">▼</span>
-          </summary>
-          <p class="mt-4 text-slate-600">Yes, Power BI requires licenses for each user viewing dashboards. Power BI Pro costs $10/user/month directly from Microsoft. We'll help you set this up during onboarding.</p>
-        </details>
-
-        <details class="bg-white rounded-xl shadow-lg p-6 cursor-pointer group">
-          <summary class="font-bold text-lg text-sky-900 list-none flex justify-between items-center">
-            Can I upgrade or downgrade my package?
-            <span class="text-2xl group-open:rotate-180 transition-transform">▼</span>
-          </summary>
-          <p class="mt-4 text-slate-600">Absolutely! You can upgrade anytime. For downgrades, we require 30 days notice. We'll work with you to find the right fit as your business grows.</p>
-        </details>
-
-        <details class="bg-white rounded-xl shadow-lg p-6 cursor-pointer group">
-          <summary class="font-bold text-lg text-sky-900 list-none flex justify-between items-center">
-            What if my QuickBooks is a mess?
-            <span class="text-2xl group-open:rotate-180 transition-transform">▼</span>
-          </summary>
-          <p class="mt-4 text-slate-600">No problem! We offer QuickBooks cleanup services ($1,000-$2,500). We'll audit your file, fix errors, reconcile accounts, and get everything organized before starting ongoing bookkeeping.</p>
-        </details>
-
-        <details class="bg-white rounded-xl shadow-lg p-6 cursor-pointer group">
-          <summary class="font-bold text-lg text-sky-900 list-none flex justify-between items-center">
-            How long does setup take?
-            <span class="text-2xl group-open:rotate-180 transition-transform">▼</span>
-          </summary>
-          <p class="mt-4 text-slate-600">Bookkeeping setup: 1-2 weeks. Dashboard development: 2-4 weeks depending on complexity. We'll have you up and running within 4-6 weeks total for most projects.</p>
-        </details>
-
-        <details class="bg-white rounded-xl shadow-lg p-6 cursor-pointer group">
-          <summary class="font-bold text-lg text-sky-900 list-none flex justify-between items-center">
-            What if I already have a bookkeeper?
-            <span class="text-2xl group-open:rotate-180 transition-transform">▼</span>
-          </summary>
-          <p class="mt-4 text-slate-600">Perfect! You can just purchase our standalone Power BI dashboard packages. We'll work with your existing bookkeeper to ensure data quality and build dashboards on top of your clean QuickBooks data.</p>
-        </details>
-
-        <details class="bg-white rounded-xl shadow-lg p-6 cursor-pointer group">
-          <summary class="font-bold text-lg text-sky-900 list-none flex justify-between items-center">
-            Do you work with industries other than those listed?
-            <span class="text-2xl group-open:rotate-180 transition-transform">▼</span>
-          </summary>
-          <p class="mt-4 text-slate-600">Yes! We've worked with construction, e-commerce, professional services, healthcare, restaurants, and more. Every dashboard is custom-built for your specific industry and KPIs.</p>
-        </details>
+        <div class="border-l-4 border-emerald-500 pl-6">
+          <h4 class="font-bold text-lg mb-2">🏗️ Construction Company ($5M revenue)</h4>
+          <p class="text-slate-600">Identified 2 unprofitable projects costing $50K in losses. Adjusted pricing model. <span class="font-bold text-emerald-600">Saved $75K in Year 1.</span></p>
+        </div>
+        <div class="border-l-4 border-sky-500 pl-6">
+          <h4 class="font-bold text-lg mb-2">🛒 E-commerce Store ($2M revenue)</h4>
+          <p class="text-slate-600">Discovered 30% of products had negative margins. Discontinued losers, focused on winners. <span class="font-bold text-sky-600">Increased profit by $60K.</span></p>
+        </div>
+        <div class="border-l-4 border-amber-500 pl-6">
+          <h4 class="font-bold text-lg mb-2">💼 Marketing Agency ($3M revenue)</h4>
+          <p class="text-slate-600">Found 3 unprofitable clients. Raised rates or let them go. <span class="font-bold text-amber-600">Improved margins by 12%, added $90K to bottom line.</span></p>
+        </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Final CTA -->
-  <section class="py-16 md:py-20 bg-gradient-to-r from-sky-900 to-sky-800 text-white">
-    <div class="max-w-4xl mx-auto px-4 text-center">
-      <h2 class="text-3xl md:text-5xl font-extrabold mb-6">Ready to Get Started?</h2>
-      <p class="text-xl mb-8 opacity-90">Book a FREE 30-minute discovery call. No pressure. No sales pitch.</p>
-      <p class="text-lg mb-8 opacity-80">We'll discuss your needs, recommend the right package, and answer all your questions.</p>
-      <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="contact.html" class="inline-block px-8 py-4 rounded-full bg-amber-400 text-sky-900 font-bold text-lg hover:brightness-95 transition-all transform hover:scale-105">
-          📞 Schedule Discovery Call
-        </a>
-        <a href="mailto:contact.nedddigital@gmail.com" class="inline-block px-8 py-4 rounded-full bg-white text-sky-900 font-bold text-lg hover:bg-slate-100 transition-all">
-          📧 Email Us
-        </a>
-      </div>
-      <p class="mt-8 text-sm opacity-75">We typically respond within 24 hours</p>
+<!-- FAQ Section -->
+<section class="py-16 md:py-20">
+  <div class="max-w-4xl mx-auto px-4">
+    <h2 class="text-3xl md:text-4xl font-extrabold text-center text-sky-900 mb-12">❓ Frequently Asked Questions</h2>
+    <div class="space-y-6">
+      
+      <details class="bg-white rounded-xl shadow-lg p-6 cursor-pointer group">
+        <summary class="font-bold text-lg text-sky-900 list-none flex justify-between items-center">
+          What's included in the FREE historical dashboard with bookkeeping packages?
+          <span class="text-2xl group-open:rotate-180 transition-transform">▼</span>
+        </summary>
+        <p class="mt-4 text-slate-600">With every bookkeeping package, you get 1 custom Power BI dashboard built using the <strong>last 3 years of historical data</strong> from your QuickBooks. This is a <strong>one-time build</strong> showing past trends and KPIs. It does <strong>NOT</strong> include automated refresh, real-time updates, or ongoing maintenance. For live dashboards with automated refresh, see our standalone Dashboard Packages above.</p>
+      </details>
+
+      <details class="bg-white rounded-xl shadow-lg p-6 cursor-pointer group">
+        <summary class="font-bold text-lg text-sky-900 list-none flex justify-between items-center">
+          Why do Dashboard Packages require a 12-month contract?
+          <span class="text-2xl group-open:rotate-180 transition-transform">▼</span>
+        </summary>
+        <p class="mt-4 text-slate-600">Building a custom dashboard requires significant upfront investment in design, data modeling, integration, and testing. The 12-month commitment ensures ongoing quality, support, and automated refresh services. After 12 months, you can continue month-to-month or take ownership of the dashboard files and manage them yourself.</p>
+      </details>
+
+      <details class="bg-white rounded-xl shadow-lg p-6 cursor-pointer group">
+        <summary class="font-bold text-lg text-sky-900 list-none flex justify-between items-center">
+          What happens if I cancel my Dashboard contract early?
+          <span class="text-2xl group-open:rotate-180 transition-transform">▼</span>
+        </summary>
+        <p class="mt-4 text-slate-600">Early cancellation requires a $1,000 termination fee plus 50% of the remaining monthly payments. For example, if you cancel at month 6 on the Starter plan ($400/month), you'd pay: $1,000 fee + ($400 × 50% × 6 months) = $2,200 total. This protects our investment in building your custom solution.</p>
+      </details>
+
+      <details class="bg-white rounded-xl shadow-lg p-6 cursor-pointer group">
+        <summary class="font-bold text-lg text-sky-900 list-none flex justify-between items-center">
+          Do I need to purchase Power BI licenses?
+          <span class="text-2xl group-open:rotate-180 transition-transform">▼</span>
+        </summary>
+        <p class="mt-4 text-slate-600">Yes, Power BI requires licenses for each user viewing dashboards. Power BI Pro costs $10/user/month directly from Microsoft (or Power BI Premium for organization-wide access). We'll help you determine the best licensing option and set this up during onboarding.</p>
+      </details>
+
+      <details class="bg-white rounded-xl shadow-lg p-6 cursor-pointer group">
+        <summary class="font-bold text-lg text-sky-900 list-none flex justify-between items-center">
+          What's the difference between "monthly transaction entry" and "weekly" or "daily"?
+          <span class="text-2xl group-open:rotate-180 transition-transform">▼</span>
+        </summary>
+        <p class="mt-4 text-slate-600"><strong>Monthly entry (Essential):</strong> Transactions are recorded once per month at month-end (28-30th). <strong>Weekly entry (Professional):</strong> Transactions updated every week for more current data. <strong>Daily processing (Enterprise):</strong> Transactions entered daily for real-time accuracy. Choose based on how current you need your books to be.</p>
+      </details>
+
+      <details class="bg-white rounded-xl shadow-lg p-6 cursor-pointer group">
+        <summary class="font-bold text-lg text-sky-900 list-none flex justify-between items-center">
+          What's the difference between "Basic AR/AP Tracking" and "Full AR/AP Management"?
+          <span class="text-2xl group-open:rotate-180 transition-transform">▼</span>
+        </summary>
+        <p class="mt-4 text-slate-600"><strong>Basic Tracking (Essential):</strong> We record invoices and bills in QuickBooks and track who owes what. No follow-ups or reminders. <strong>Full Management (Professional/Enterprise):</strong> We actively manage the process including sending payment reminders, following up on overdue accounts, scheduling vendor payments, and providing cash flow insights.</p>
+      </details>
+
+      <details class="bg-white rounded-xl shadow-lg p-6 cursor-pointer group">
+        <summary class="font-bold text-lg text-sky-900 list-none flex justify-between items-center">
+          Can I upgrade or downgrade my package?
+          <span class="text-2xl group-open:rotate-180 transition-transform">▼</span>
+        </summary>
+        <p class="mt-4 text-slate-600">Absolutely! You can upgrade anytime. For downgrades, we require 30 days notice. We'll work with you to find the right fit as your business grows or changes.</p>
+      </details>
+
+      <details class="bg-white rounded-xl shadow-lg p-6 cursor-pointer group">
+        <summary class="font-bold text-lg text-sky-900 list-none flex justify-between items-center">
+          What if my QuickBooks is a mess?
+          <span class="text-2xl group-open:rotate-180 transition-transform">▼</span>
+        </summary>
+        <p class="mt-4 text-slate-600">No problem! We offer QuickBooks cleanup services ($1,000-$2,500). We'll audit your file, fix errors, reconcile accounts, and get everything organized before starting ongoing bookkeeping.</p>
+      </details>
+
+      <details class="bg-white rounded-xl shadow-lg p-6 cursor-pointer group">
+        <summary class="font-bold text-lg text-sky-900 list-none flex justify-between items-center">
+          How long does setup take?
+          <span class="text-2xl group-open:rotate-180 transition-transform">▼</span>
+        </summary>
+        <p class="mt-4 text-slate-600">Bookkeeping setup: 1-2 weeks. Historical dashboard (included with bookkeeping): 2-3 weeks. Live dashboard with automation (standalone packages): 2-4 weeks. We'll have you up and running within 4-6 weeks total for most projects.</p>
+      </details>
+
+      <details class="bg-white rounded-xl shadow-lg p-6 cursor-pointer group">
+        <summary class="font-bold text-lg text-sky-900 list-none flex justify-between items-center">
+          What if I already have a bookkeeper?
+          <span class="text-2xl group-open:rotate-180 transition-transform">▼</span>
+        </summary>
+        <p class="mt-4 text-slate-600">Perfect! You can purchase our standalone Power BI dashboard packages. We'll work with your existing bookkeeper to ensure data quality and build dashboards on top of your clean QuickBooks data. Note: These require a 12-month commitment and include ongoing automated refresh.</p>
+      </details>
+
+      <details class="bg-white rounded-xl shadow-lg p-6 cursor-pointer group">
+        <summary class="font-bold text-lg text-sky-900 list-none flex justify-between items-center">
+          Do you work with industries other than those listed?
+          <span class="text-2xl group-open:rotate-180 transition-transform">▼</span>
+        </summary>
+        <p class="mt-4 text-slate-600">Yes! We've worked with construction, e-commerce, professional services, healthcare, restaurants, manufacturing, and more. Every dashboard is custom-built for your specific industry and KPIs.</p>
+      </details>
     </div>
-  </section>
+  </div>
+</section>
+
+<!-- Final CTA -->
+<section class="py-16 md:py-20 bg-gradient-to-r from-sky-900 to-sky-800 text-white">
+  <div class="max-w-4xl mx-auto px-4 text-center">
+    <h2 class="text-3xl md:text-5xl font-extrabold mb-6">Ready to Get Started?</h2>
+    <p class="text-xl mb-8 opacity-90">Book a FREE 30-minute discovery call. No pressure. No sales pitch.</p>
+    <p class="text-lg mb-8 opacity-80">We'll discuss your needs, recommend the right package, and answer all your questions.</p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="contact.html" class="inline-block px-8 py-4 rounded-full bg-amber-400 text-sky-900 font-bold text-lg hover:brightness-95 transition-all transform hover:scale-105">
+        📞 Schedule Discovery Call
+      </a>
+      <a href="mailto:contact.nedddigital@gmail.com" class="inline-block px-8 py-4 rounded-full bg-white text-sky-900 font-bold text-lg hover:bg-slate-100 transition-all">
+        📧 Email Us
+      </a>
+    </div>
+    <p class="mt-8 text-sm opacity-75">We typically respond within 24 hours</p>
+  </div>
+</section>
 
  <!-- Footer -->
   <footer class="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-slate-300">
