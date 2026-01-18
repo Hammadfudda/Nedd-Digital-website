@@ -79,6 +79,9 @@
       <button onclick="showDashboards()" id="btnDashboards" class="px-6 py-3 rounded-full hover:bg-white/20 text-white font-bold transition-all">
         📊 Dashboard Packages
       </button>
+       <button onclick="showOneTime()" id="btnOneTime" class="px-6 py-3 rounded-full hover:bg-white/20 text-white font-bold transition-all">
+    🆕 One-Time Build
+  </button>
     </div>
   </div>
 </section>
@@ -682,6 +685,103 @@
   </div>
 </section>
 
+<!-- ONE-TIME DASHBOARD BUILD (No Contract) -->
+<section id="oneTimeSection" class="py-16 md:py-20 bg-gradient-to-br from-purple-50 to-indigo-50 hidden">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="text-center mb-12">
+      <div class="inline-block bg-purple-100 text-purple-800 px-4 py-2 rounded-full font-bold text-sm mb-4">
+        🆕 NEW OPTION - No Contract Required!
+      </div>
+      <h2 class="text-3xl md:text-5xl font-extrabold text-purple-900 mb-4">📊 One-Time Dashboard Build</h2>
+      <p class="text-xl text-slate-600">Need just a dashboard? No ongoing service? We've got you covered!</p>
+    </div>
+
+    <div class="max-w-4xl mx-auto">
+      <div class="bg-white rounded-2xl shadow-2xl border-4 border-purple-400 overflow-hidden">
+        <div class="bg-gradient-to-r from-purple-600 to-indigo-600 text-white p-8 text-center">
+          <h3 class="text-3xl font-extrabold mb-3">Custom Dashboard - One-Time Build</h3>
+          <div class="text-5xl font-extrabold mb-2">$2,500 - $5,000</div>
+          <div class="text-lg opacity-90">One-time payment • No monthly fees</div>
+          <div class="mt-4 inline-block bg-white/20 backdrop-blur-sm rounded-full px-6 py-2">
+            <span class="font-bold">✅ NO 12-MONTH CONTRACT</span>
+          </div>
+        </div>
+
+        <div class="p-8">
+          <div class="grid md:grid-cols-2 gap-6 mb-6">
+            <div class="bg-emerald-50 rounded-xl p-5 border-2 border-emerald-300">
+              <h4 class="font-bold text-lg mb-3 text-emerald-900 flex items-center gap-2">
+                <span class="text-2xl">✅</span> What's Included
+              </h4>
+              <ul class="space-y-2 text-sm text-slate-700">
+                <li>✓ Custom dashboard design (up to 15 visuals)</li>
+                <li>✓ Historical data integration (last 3 years)</li>
+                <li>✓ QuickBooks or Excel data connection</li>
+                <li>✓ Basic training session (2 hours)</li>
+                <li>✓ Dashboard files transferred to you</li>
+                <li>✓ Full ownership from day 1</li>
+              </ul>
+            </div>
+
+            <div class="bg-red-50 rounded-xl p-5 border-2 border-red-300">
+              <h4 class="font-bold text-lg mb-3 text-red-900 flex items-center gap-2">
+                <span class="text-2xl">❌</span> What's NOT Included
+              </h4>
+              <ul class="space-y-2 text-sm text-slate-700">
+                <li>✗ NO automated data refresh</li>
+                <li>✗ NO ongoing support</li>
+                <li>✗ NO monthly maintenance</li>
+                <li>✗ You manage refresh yourself</li>
+                <li>✗ Future updates: $150/hour (optional)</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="bg-amber-50 border-l-4 border-amber-400 p-5 rounded-lg mb-6">
+            <h4 class="font-bold text-amber-900 mb-2">💡 Perfect For:</h4>
+            <ul class="space-y-1 text-sm text-slate-700">
+              <li>• Clients with in-house IT teams who can manage refresh</li>
+              <li>• One-time projects or reporting needs</li>
+              <li>• Businesses that want full ownership from day 1</li>
+              <li>• Companies that don't need automated updates</li>
+            </ul>
+          </div>
+
+          <div class="bg-sky-50 rounded-xl p-5 border-2 border-sky-300 mb-6">
+            <h4 class="font-bold text-sky-900 mb-3 text-center">📋 How It Works</h4>
+            <div class="grid md:grid-cols-3 gap-4 text-center">
+              <div>
+                <div class="text-3xl mb-2">1️⃣</div>
+                <p class="text-sm font-semibold text-slate-700">Consultation & Quote</p>
+                <p class="text-xs text-slate-600 mt-1">We discuss your needs</p>
+              </div>
+              <div>
+                <div class="text-3xl mb-2">2️⃣</div>
+                <p class="text-sm font-semibold text-slate-700">Build Dashboard</p>
+                <p class="text-xs text-slate-600 mt-1">2-4 weeks development</p>
+              </div>
+              <div>
+                <div class="text-3xl mb-2">3️⃣</div>
+                <p class="text-sm font-semibold text-slate-700">Handover & Training</p>
+                <p class="text-xs text-slate-600 mt-1">Files transferred to you</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="contact.html" class="flex-1 text-center px-6 py-4 rounded-full bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-bold hover:from-purple-700 hover:to-indigo-700 transition-all transform hover:scale-105 shadow-lg">
+              Get Custom Quote
+            </a>
+            <a href="contact.html" class="flex-1 text-center px-6 py-4 rounded-full border-2 border-purple-600 text-purple-600 font-bold hover:bg-purple-50 transition-all">
+              Schedule Consultation
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ROI Section -->
 <section class="py-16 md:py-20 bg-gradient-to-br from-emerald-50 to-emerald-100">
   <div class="max-w-6xl mx-auto px-4">
@@ -806,6 +906,14 @@
         </summary>
         <p class="mt-4 text-slate-600">Perfect! You can purchase our standalone Power BI dashboard packages. We'll work with your existing bookkeeper to ensure data quality and build dashboards on top of your clean QuickBooks data. Note: These require a 12-month commitment and include ongoing automated refresh.</p>
       </details>
+
+      <details class="bg-white rounded-xl shadow-lg p-6 cursor-pointer group">
+  <summary class="font-bold text-lg text-sky-900 list-none flex justify-between items-center">
+    Can I get just a dashboard without a 12-month contract?
+    <span class="text-2xl group-open:rotate-180 transition-transform">▼</span>
+  </summary>
+  <p class="mt-4 text-slate-600">Yes! Our <strong>One-Time Dashboard Build</strong> option ($2,500-$5,000) is perfect for clients who need a custom dashboard without ongoing service. You'll get a fully functional dashboard with historical data, training, and complete ownership. However, this does NOT include automated refresh or ongoing support. You'll manage the dashboard yourself, and future updates are available at $150/hour if needed.</p>
+</details>
 
       <details class="bg-white rounded-xl shadow-lg p-6 cursor-pointer group">
         <summary class="font-bold text-lg text-sky-900 list-none flex justify-between items-center">
@@ -939,26 +1047,50 @@
       </div>
     </div>
   </footer>
-
-  <!-- JavaScript for tab switching and mobile nav -->
+<!-- JavaScript for tab switching and mobile nav -->
   <script>
     // Tab Switching
     function showBookkeeping() {
       document.getElementById('bookkeepingSection').classList.remove('hidden');
       document.getElementById('dashboardSection').classList.add('hidden');
+      document.getElementById('oneTimeSection').classList.add('hidden'); // ✅ ADDED
+      
       document.getElementById('btnBookkeeping').classList.add('bg-amber-400', 'text-sky-900');
       document.getElementById('btnBookkeeping').classList.remove('hover:bg-white/20', 'text-white');
       document.getElementById('btnDashboards').classList.remove('bg-amber-400', 'text-sky-900');
       document.getElementById('btnDashboards').classList.add('hover:bg-white/20', 'text-white');
+      document.getElementById('btnOneTime').classList.remove('bg-amber-400', 'text-sky-900'); // ✅ ADDED
+      document.getElementById('btnOneTime').classList.add('hover:bg-white/20', 'text-white'); // ✅ ADDED
     }
 
     function showDashboards() {
       document.getElementById('bookkeepingSection').classList.add('hidden');
       document.getElementById('dashboardSection').classList.remove('hidden');
+      document.getElementById('oneTimeSection').classList.add('hidden'); // ✅ ADDED
+      
       document.getElementById('btnDashboards').classList.add('bg-amber-400', 'text-sky-900');
       document.getElementById('btnDashboards').classList.remove('hover:bg-white/20', 'text-white');
       document.getElementById('btnBookkeeping').classList.remove('bg-amber-400', 'text-sky-900');
       document.getElementById('btnBookkeeping').classList.add('hover:bg-white/20', 'text-white');
+      document.getElementById('btnOneTime').classList.remove('bg-amber-400', 'text-sky-900'); // ✅ ADDED
+      document.getElementById('btnOneTime').classList.add('hover:bg-white/20', 'text-white'); // ✅ ADDED
+    }
+
+    // ✅ NEW FUNCTION
+    function showOneTime() {
+      document.getElementById('bookkeepingSection').classList.add('hidden');
+      document.getElementById('dashboardSection').classList.add('hidden');
+      document.getElementById('oneTimeSection').classList.remove('hidden'); // Show One-Time section
+      
+      // Reset all buttons
+      document.getElementById('btnBookkeeping').classList.remove('bg-amber-400', 'text-sky-900');
+      document.getElementById('btnBookkeeping').classList.add('hover:bg-white/20', 'text-white');
+      document.getElementById('btnDashboards').classList.remove('bg-amber-400', 'text-sky-900');
+      document.getElementById('btnDashboards').classList.add('hover:bg-white/20', 'text-white');
+      
+      // Highlight One-Time button
+      document.getElementById('btnOneTime').classList.add('bg-amber-400', 'text-sky-900');
+      document.getElementById('btnOneTime').classList.remove('hover:bg-white/20', 'text-white');
     }
 
     // Mobile Navigation Toggle
